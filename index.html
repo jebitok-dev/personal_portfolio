@@ -12,12 +12,16 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <title>Personal Portfolio - Sharon Jebitok!</title>
   </head>
   <body>
-    <section class="text-white container-fluid">
+    <section class="text-white container">
       <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Sharon Jebitok</a>
@@ -33,7 +37,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+            <ul class="nav navbar-nav pull-right">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"
                   >Portfolio</a
@@ -45,255 +49,283 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
               </li>
+              <li class="nav-item">
+                <a href="#" class="fa fa-envelope nav-link"></a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
-
       <div class="container">
         <section>
-          <header class="bg-dark">
-            <ul>
-              <li><i class="fab fa-github"></i></li>
-              <li><i class="fab fa-linkedin-in"></i></li>
-              <li><i class="fab fa-twitter"></i></li>
-              <li><i class="fas fa-rss-square"></i></li>
-            </ul>
-            <div>
-              <h1>Hey There.</h1>
-              <h1>I'm Alex</h1>
-              <h4>I'am a Software Developer</h4>
-              <p>I can help you build a product, feature or website Look</p>
-              <p>through some of my work and experience! If you like what</p>
-              <p>you can see and have a project you need coded,</p>
-              <p>don't hesitate to contact me.</p>
+          <header class="bg-dark container space">
+            <div class="row">
+              <ul class="col list-inline">
+                <li><i class="fa fa-github"></i></li>
+                <li><i class="fa fa-linkedin"></i></li>
+                <li><i class="fa fa-twitter"></i></li>
+                <li>
+                  <i class="fa fa-rss-square"></i>
+                </li>
+              </ul>
+              <div class="col">
+                <h1 class="text-success">Hey There.</h1>
+                <h1 class="text-success">I'm Alex</h1>
+                <h4>I'am a Software Developer</h4>
+                <p>
+                  I can help you build a product, feature or website Look
+                  through some of my work and experience! If you like what you
+                  can see and have a project you need coded, don't hesitate to
+                  contact me.
+                </p>
+              </div>
+              <div class="col d-sm-none d-md-block">
+                <img
+                  src="https://source.unsplash.com/200x200"
+                  class="img-fluid"
+                  alt="header-img"
+                />
+              </div>
             </div>
-            <!-- <img
-            src="https://source.unsplash.com/200x200"
-            class="card-img-top"
-            alt="..."
-          /> -->
           </header>
           <div class="container">
-            <h3>My Recent Work</h3>
-            <hr />
-            <!-- img -->
-            <div class="card" style="width: 18rem">
-              <img
-                src="https://source.unsplash.com/201x200"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Project1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <ul>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                </ul>
+            <div class="text-dark">
+              <h3>My Recent Work</h3>
+              <hr />
+            </div>
+            <div class="row">
+              <div class="card text-white col-6 col-md-4">
+                <img
+                  src="https://source.unsplash.com/201x200"
+                  class="card-img"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Project1</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <ul class="list-group list-group-horizontal card-text">
+                    <li class="list-group-item">
+                      <a href="#" class="btn btn-outline-dark">css</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="btn btn-outline-dark">bootstrap</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="btn btn-outline-dark">Ruby</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card text-white col-6 col-md-4">
+                <img
+                  src="https://source.unsplash.com/202x200"
+                  class="card-img"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Project1</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <ul class="list-group list-group-horizontal card-text">
+                    <li class="list-group-item">
+                      <a href="#" class="btn btn-outline-dark">css</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="btn btn-outline-dark">html</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="btn btn-outline-dark">bootstrap</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card text-white col-6 col-md-4">
+                <img
+                  src="https://source.unsplash.com/203x200"
+                  class="card-img"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Project1</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <ul class="list-group list-group-horizontal card-text">
+                    <li class="list-group-item">
+                      <a href="#" class="btn btn-outline-dark">css</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="btn btn-outline-dark">bootstrap</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="btn btn-outline-dark">Ruby</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="https://source.unsplash.com/202x200"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Project1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <ul>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                </ul>
+            <div class="row">
+              <div class="card text-white col-6 col-md-4">
+                <img
+                  src="https://source.unsplash.com/204x200"
+                  class="card-img"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Project1</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <ul class="list-group list-group-horizontal card-text">
+                    <li class="list-group-item">
+                      <a href="#" class="btn btn-outline-dark">css</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="btn btn-outline-dark">html</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="btn btn-outline-dark">Ruby</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="https://source.unsplash.com/203x200"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Project1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <ul>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                </ul>
+              <div class="card text-white col-6 col-md-4">
+                <img
+                  src="https://source.unsplash.com/205x200"
+                  class="card-img"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Project1</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <ul class="list-group list-group-horizontal card-text">
+                    <li class="list-group-item">
+                      <a href="#" class="btn btn-outline-dark">bootstrap</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="btn btn-outline-dark">Ruby</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="https://source.unsplash.com/204x200"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Project1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <ul>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="https://source.unsplash.com/205x200"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Project1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <ul>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem">
-              <img
-                src="https://source.unsplash.com/206x200"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Project1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <ul>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                  <li><a href="#" class="btn btn-primary">Go somewhere</a></li>
-                </ul>
+              <div class="card text-white col-6 col-md-4">
+                <img
+                  src="https://source.unsplash.com/206x200"
+                  class="card-img"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Project1</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <ul class="list-group list-group-horizontal card-text">
+                    <li class="list-group-item">
+                      <a href="#" class="btn btn-outline-dark">Ruby</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="container">
-            <article>
-              <h3>About Me</h3>
+          <div class="container bg-dark">
+            <article class="row">
+              <h3 class="col text-success">About Me</h3>
               <p>
                 Hello I'm a software developer! I can help you build a product,
                 feature or website. Look through some of my work and experience!
                 If you like what you can see and have a project you need coded,
                 don't hesitate to contact me.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-success">Go somewhere</a>
             </article>
-            <figure>
-              <!-- <img
+            <figure class="col">
+              <img
                 src="https://source.unsplash.com/200x200"
-                class="card-img-top"
-                alt="..."
-              /> -->
+                class="img-fluid"
+                alt="about-img"
+              />
             </figure>
           </div>
           <hr class="secondary" />
-          <div class="container">
-            <ul>
-              <h4>Language</h4>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <ul>
-              <h4>Frameworks</h4>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <ul>
-              <h4>Skills</h4>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+          <div class="container bg-dark">
+            <div class="row">
+              <ul class="col">
+                <h4>Language</h4>
+                <li>JavaScript</li>
+                <li>Ruby</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <ul class="col">
+                <h4>Frameworks</h4>
+                <li>Bootstrap</li>
+                <li>Ruby on Rails</li>
+                <li>RSPec</li>
+                <li>React</li>
+              </ul>
+              <ul class="col">
+                <h4>Skills</h4>
+                <li>GitHub</li>
+                <li>Netlify</li>
+                <li>Ubuntu</li>
+              </ul>
+            </div>
           </div>
           <div class="container">
             <article>
               I'm always interested in hearing about new projects, so if you'
-              <div>like to caht please get in touch.</div>
+              like to chat please get in touch.
             </article>
             <form>
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
+                <!-- <label for="exampleInputEmail1">Email address</label> -->
+                <input
+                  type="name"
+                  class="form-control"
+                  id="exampleInputName1"
+                  aria-describedby="nameHelp"
+                  placeholder="Full Name"
+                />
                 <input
                   type="email"
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
-                  placeholder="Enter email"
+                  placeholder="Email Address"
                 />
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input
-                  type="password"
+                <!-- <label for="exampleInputPassword1">Password</label> -->
+                <textarea
                   class="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Password"
-                />
+                  placeholder="Enter text here"
+                  rows="5"
+                  id="text"
+                ></textarea>
               </div>
-              <div class="form-group form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1"
-                  >Check me out</label
-                >
-              </div>
-              <button type="submit" class="btn btn-primary">
+              <button type="submit" class="btn btn-success">
                 Get in touch
               </button>
             </form>
           </div>
           <footer>
             <ul>
-              <li><i class="fab fa-github"></i></li>
-              <li><i class="fab fa-linkedin-in"></i></li>
-              <li><i class="fab fa-twitter"></i></li>
-              <li><i class="fas fa-rss-square"></i></li>
+              <li><i class="fa fa-github"></i></li>
+              <li><i class="fa fa-linkedin"></i></li>
+              <li><i class="fa fa-twitter"></i></li>
+              <li><i class="fa fa-rss-square"></i></li>
             </ul>
           </footer>
         </section>
