@@ -1,8 +1,47 @@
 .space {
   margin-bottom: 80px;
 }
+
+p.a {
+  font-family: "Times New Roman", Times, serif;
+}
+
 @media screen and (max-width: 992px) {
   #main-navbar {
     clear: both;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+img,
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .col-md-3 {
+    width: 100%;
+    float: left;
+    margin: 0;
   }
 }
