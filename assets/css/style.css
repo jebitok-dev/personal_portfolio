@@ -1,7 +1,18 @@
 
 :root {
-  --white: #ffffff;
-  --orange: #F55800;
+  --white: #fff;
+  --orange: #f55800;
+  --linear: #262626;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 .space {
