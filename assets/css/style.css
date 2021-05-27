@@ -1,3 +1,9 @@
+
+:root {
+  --white: #ffffff;
+  --orange: #F55800;
+}
+
 .space {
   margin-bottom: 80px;
 }
@@ -10,6 +16,15 @@ p.a {
   #main-navbar {
     clear: both;
   }
+}
+
+.success {
+  color: var(--orange);
+}
+
+.bg-success1 {
+  background-color: var(--orange);
+  color: var(--white);
 }
 
 .flex-container {
