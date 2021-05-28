@@ -49,6 +49,10 @@ img,
   height: auto;
 }
 
+.card {
+  margin: 5px;
+}
+
 .btn-responsive {
   /* matches 'btn-md' */
   padding: 10px 16px;
