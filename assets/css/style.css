@@ -49,6 +49,14 @@ img,
   height: auto;
 }
 
+.btn-responsive {
+  /* matches 'btn-md' */
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
@@ -58,6 +66,13 @@ img,
 @media screen and (max-width: 768px) {
   img {
     width: 100%;
+  }
+
+  .btn-responsive {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
   }
 
   .container {

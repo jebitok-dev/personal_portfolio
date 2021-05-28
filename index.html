@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/main.css" /> -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <title>Sharon Jebitok - Personal Portfolio!</title>
@@ -63,7 +63,7 @@
         <section>
           <header class="bg-dark container space">
             <div class="row">
-              <ul class="col list-inline">
+              <ul class="col order-first list-inline">
                 <li><i class="fa fa-github"></i></li>
                 <li><i class="fa fa-linkedin"></i></li>
                 <li><i class="fa fa-twitter"></i></li>
@@ -71,7 +71,7 @@
                   <i class="fa fa-rss-square"></i>
                 </li>
               </ul>
-              <div class="col">
+              <div class="col ">
                 <h1 class="success">Hey There.</h1>
                 <h1 class="success">I'm Sharon</h1>
                 <h4>I'am a Software Developer</h4>
@@ -82,7 +82,7 @@
                   contact me.
                 </p>
               </div>
-              <div class="col d-sm-none d-md-block">
+              <div class="col order-last">
                 <img
                   src="./assets/images/Illustration-header.svg"
                   class="img-fluid"
@@ -147,7 +147,6 @@
                         <a href="#" class="btn btn-outline-dark">Heroku</a>
                       </li>
                     </ul>
-                  </div>
                 </div>
               </div>
               <br>
@@ -204,24 +203,30 @@
           <hr class="secondary" />
           <div class="container bg-dark">
             <div class="row flex-container">
-              <h4>Language</h4>
+              <div class="col-sm">
+              <h4><i class="fa fa-diamond success"></i>
+                Language</h4>
                 <p>JavaScript</p>
                 <p>Ruby</p>
                 <p>HTML</p>
                 <p>CSS</p>
-                <br>
-              <h4>Frameworks</h4>
+              </div>
+              <br>
+              <div class="col-sm">
+              <h4><i class="fa fa-square success"></i>Frameworks</h4>
                 <p>Bootstrap</p>
                 <p>Ruby on Rails</p>
                 <p>RSPec</p>
                 <p>React</p>
-                <br>
-              <h4>Skills</h4>
+              </div>
+              <br>
+              <div class="col-sm">
+              <h4><i class="fa fa-circle success"></i>Skills</h4>
                 <p>GitHub</p>
                 <p>Netlify</p>
                 <p>Ubuntu</p>
-                <br>
-              
+              </div>
+              <br>
             </div>
           </div>
           <div class="container">
