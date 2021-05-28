@@ -5,13 +5,23 @@
   --linear: #262626;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Intern", sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
   font-size: 10px;
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -19,8 +29,14 @@ body {
   margin-bottom: 80px;
 }
 
-p.a {
-  font-family: "Times New Roman", Times, serif;
+.crete, .card-text {
+  font-family: "Inter", sans-serif;
+}
+
+.card-title, 
+h1, 
+h3 {
+  font-family: "Crete Round", sans-serif;
 }
 
 @media screen and (max-width: 992px) {
