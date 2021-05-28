@@ -29,12 +29,13 @@ body {
   margin-bottom: 80px;
 }
 
-.crete, .card-text {
+.crete,
+.card-text {
   font-family: "Inter", sans-serif;
 }
 
-.card-title, 
-h1, 
+.card-title,
+h1,
 h3 {
   font-family: "Crete Round", sans-serif;
 }
