@@ -13,6 +13,10 @@
   margin: 0;
 }
 
+html, body {
+  width: 100%;
+}
+
 html {
   font-family: "Intern", sans-serif;
   line-height: 1.15;
@@ -40,10 +44,23 @@ h3 {
   font-family: "Crete Round", sans-serif;
 }
 
+li {
+  text-decoration-color: var(--white);
+}
+
 @media screen and (max-width: 992px) {
   #main-navbar {
     clear: both;
   }
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--linear);
+  color: white;
+  text-align: center;
 }
 
 .success {
