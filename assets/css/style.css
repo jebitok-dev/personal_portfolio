@@ -3,6 +3,8 @@
   --white: #fff;
   --orange: #f55800;
   --linear: #262626;
+  --dark: #000;
+  --grey: #ccc;
 }
 
 *,
@@ -15,10 +17,13 @@
 
 html, body {
   width: 100%;
+  margin:0;
+  padding:0;
+  overflow: auto;
 }
 
 html {
-  font-family: "Intern", sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -34,7 +39,7 @@ body {
 }
 
 .crete,
-.card-text {
+.card-text, p, form {
   font-family: "Inter", sans-serif;
 }
 
@@ -44,8 +49,30 @@ h3 {
   font-family: "Crete Round", sans-serif;
 }
 
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: var(--grey);
+}
+input:focus {
+  border-color: var(--orange);
+}
+
 li {
   text-decoration-color: var(--white);
+}
+
+textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background-color: var(--grey);
+
+  resize: none; /*remove the resize handle on the bottom right*/
 }
 
 @media screen and (max-width: 992px) {
