@@ -43,6 +43,11 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+a {
+  color: var(--white);
+}
+
+
 .card-title,
 h1,
 h3 {
@@ -85,8 +90,8 @@ textarea {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: var(--linear);
   color: white;
+  background-color: var(--grey);
   text-align: center;
 }
 
