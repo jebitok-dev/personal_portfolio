@@ -70,6 +70,10 @@ li {
   text-decoration-color: var(--white);
 }
 
+.first li {
+  margin: 40px;
+}
+
 textarea {
   border: none;
   overflow: auto;
@@ -150,6 +154,20 @@ img,
 @media screen and (max-width: 600px) {
   img {
     width: 100%;
+  }
+
+  .first {
+    order: 2;
+  }
+
+  .first li {
+    display: inline;
+    margin: 20px;
+  }
+
+  .second {
+    order: 1;
+    display: block;
   }
 
   .skills {
