@@ -104,6 +104,10 @@ textarea {
   color: var(--white);
 }
 
+.skills {
+  justify-content: center;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -131,11 +135,21 @@ img,
   .flex-container {
     flex-direction: column;
   }
+
+  .skills {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 768px) {
   img {
     width: 100%;
+  }
+
+  .skills {
+    margin: 120px;
+    text-align: center;
   }
 
   .btn-responsive {
