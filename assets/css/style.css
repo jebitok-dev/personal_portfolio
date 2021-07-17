@@ -110,7 +110,7 @@ a:link {
 }
 
 .skills {
-  justify-content: center;
+  text-align: center;
 }
 
 .flex-container {
@@ -136,18 +136,18 @@ img,
   border-radius: 6px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 945px) {
   .flex-container {
     flex-direction: column;
   }
 
   .skills {
-    justify-content: center;
-    flex-wrap: wrap;
+    text-align: center;
+    /* margin: 0px; */
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   img {
     width: 100%;
   }
