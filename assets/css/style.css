@@ -15,10 +15,11 @@
   margin: 0;
 }
 
-html, body {
+html,
+body {
   width: 100%;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   overflow: auto;
 }
 
@@ -39,14 +40,15 @@ body {
 }
 
 .crete,
-.card-text, p, form {
+.card-text,
+p,
+form {
   font-family: "Inter", sans-serif;
 }
 
 a {
   color: var(--white);
 }
-
 
 .card-title,
 h1,
@@ -59,6 +61,7 @@ input {
   border-width: 0 0 2px;
   border-color: var(--grey);
 }
+
 input:focus {
   border-color: var(--orange);
 }
@@ -71,13 +74,11 @@ textarea {
   border: none;
   overflow: auto;
   outline: none;
-
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
   background-color: var(--grey);
-
-  resize: none; /*remove the resize handle on the bottom right*/
+  resize: none; /* remove the resize handle on the bottom right */
 }
 
 @media screen and (max-width: 992px) {
@@ -102,6 +103,10 @@ textarea {
 .bg-success1 {
   background-color: var(--orange);
   color: var(--white);
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .skills {
