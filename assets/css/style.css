@@ -3,6 +3,7 @@
   --white: #fff;
   --orange: #f55800;
   --linear: #262626;
+  --gray:  #3C3A39;
   --dark: #000;
   --grey: #ccc;
 }
@@ -35,8 +36,20 @@ body {
   margin: 0;
 }
 
-.second h1 {
+.navbar-right {
+  margin-left: 600px;
+}
+
+second h1 {
   font-size: 72;
+}
+
+.gray {
+  background-color: var(--gray);
+}
+
+.bookstore {
+  border: 20px solid var(--orange);
 }
 
 h2 {
@@ -86,16 +99,31 @@ input:focus {
   border-color: var(--orange);
 }
 
-li {
+.card li {
   text-decoration-color: var(--white);
+}
+
+.card-text btn {
+  background-color: transparent;
 }
 
 .first li {
   margin: 40px;
 }
 
+.see-project {
+  visibility: unset;
+}
+
 .card-img-overlay {
   background-image: linear-gradient(transparent, var(--linear) 90%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.card-img-overlay img {
+  position: relative;
 }
 
 textarea {
@@ -115,13 +143,8 @@ textarea {
   }
 }
 
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  background-color: var(--grey);
-  text-align: center;
+#special-color-dark li {
+  text-decoration-color: var(--dark);
 }
 
 .success {
@@ -134,7 +157,7 @@ textarea {
 }
 
 a:link {
-  text-decoration: none;
+  text-decoration: var(--dark);
 }
 
 .skills {
