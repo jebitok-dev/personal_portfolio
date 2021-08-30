@@ -34,34 +34,21 @@
   <body>
     <section class="text-white container-fluid flex">
       <nav class="navbar navbar-expand-lg gray">
-        <div class="container">
+        <div class="container-fluid">
           <a class="navbar-brand" href="#">Sharon Jebitok</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Portfolio</a
-                >
+            <ul class="navbar-nav ms-md-auto gap-2">
+              <li class="nav-item rounded">
+                <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-fill me-2"></i>Portfolio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+              <li class="nav-item rounded">
+                <a class="nav-link" href="#"><i class="bi bi-people-fill me-2"></i>About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="fa fa-envelope nav-link"></a>
+              <li class="nav-item rounded">
+                <a class="nav-link" href="#"><i class="bi bi-telephone-fill me-2"></i>Contact</a>
               </li>
             </ul>
           </div>
@@ -165,18 +152,17 @@
             <br />
             <div class="card text-white col-lg-3 col-md-3 col-sm-12 col-xs-12">
               <div class="card">
-                <img class="card-img" src="./assets/images/twitter-pg.png" alt="restaraunt">
-               <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                 <h6 class="card-subtitle mb-2">Twitter-Redesign</h6>
-                 <p class="card-text">App allows to sign-up or log in, tweet, follow other users.</p>
-                 <div class="link d-flex">
-                   <a href="#" class="card-link success">Ruby on Rails</a>
-                   <a href="#" class="card-link success">SCSS</a>
-                   <a href="https://github.com/jebitok-dev/Twitter-Redesign" class="card-link success">GitHub</a>
-                 </div>
-               </div>
-             </div>
-
+                <img class="card-img" src="./assets/images/twitter-pg.png" alt="twitter">
+                <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                  <h6 class="card-subtitle mb-2">Twitter-Redesign</h6>
+                  <p class="card-text">App allows to sign-up or log-in, tweet, follow other users.</p>
+                  <div class="link d-flex">
+                    <a href="#" class="card-link success">Ruby on Rails</a>
+                    <a href="#" class="card-link success">SCSS</a>
+                    <a href="https://github.com/jebitok-dev/Twitter-Redesign" class="card-link success">GitHub</a>
+                  </div>
+                </div>
+              </div>
               <a href="https://fierce-spire-26749.herokuapp.com/login" class="bg-success1 btn see-project">See Project</a>
             </div>
             <br />
@@ -303,70 +289,69 @@
           </div>
         </div>
         <br />
-        <div class="row">
-          <div class="col-sm">
-            <h3 class="text-dark">
-              I'm always interested in hearing about new projects, so if you'
-              like to chat please get in touch.
-            </h3>
-          </div>
-          <form class="col-sm">
-            <div class="form-group">
-              <input
-                type="text"
-                id="exampleInputName1"
-                placeholder="Full Name"
-              />
+          <div class="row">
+            <div class="col-sm">
+              <h3 class="text-dark">
+                I'm always interested in hearing about new projects, so if you'
+                like to chat please get in touch.
+              </h3>
+            </div>
+            <form class="col-sm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="exampleInputName1"
+                  placeholder="Full Name"
+                />
+                <br />
+                <input
+                  type="email"
+                  id="exampleInputEmail1"
+                  placeholder="Email Address"
+                />
+              </div>
               <br />
-              <input
-                type="email"
-                id="exampleInputEmail1"
-                placeholder="Email Address"
-              />
-            </div>
-            <br />
-            <div class="">
-              <textarea
-                placeholder="Enter text here"
-                rows="5"
-                id="text"
-              ></textarea>
-            </div>
-            <br />
-            <button type="submit" class="btn bg-success1">Get in touch</button>
-          </form>
-        </div>
-        <hr />
-        <footer class="page-footer font-small text-dark">
-
-          <!-- Footer Elements -->
-            <!-- Social buttons -->
-            <ul class="list-unstyled list-inline text-center" id="special-color-dark">
-              <li class="list-inline-item">
-                <a href="http://github.com/jebitok-dev" class="btn-floating btn-fb mx-1">
+              <div class="">
+                <textarea
+                  placeholder="Enter text here"
+                  rows="5"
+                  id="text"
+                ></textarea>
+              </div>
+              <br />
+              <button type="submit" class="btn bg-success1">Get in touch</button>
+            </form>
+          </div>
+          <hr />
+          <footer class="d-flex justify-content-between flex-wrap bg-dark p-4">
+     
+            <ul class="list-inline">
+              <li class="list-inline-item pl-2 border-left border-light">
+                <a href="http://github.com/jebitok-dev" class="text-white">
                   <i class="fa fa-github"> </i>
                 </a>
               </li>
-              <li class="list-inline-item">
-                <a href="http://linkedIn.com/IN/sharon-jebitok" class="btn-floating btn-tw mx-1">
+              <li class="list-inline-item pl-2 border-left border-light">
+                <a href="http://linkedIn.com/IN/sharon-jebitok" class="text-white">
                   <i class="fa fa-linkedin"> </i>
                 </a>
               </li>
-              <li class="list-inline-item">
-                <a href="http://twitter.com/sharonjebitok" class="btn-floating btn-gplus mx-1">
+              <li class="list-inline-item pl-2 border-left border-light">
+                <a href="http://twitter.com/sharonjebitok" class="text-white">
                   <i class="fa fa-twitter"> </i>
                 </a>
               </li>
-              <li class="list-inline-item">
-                <a href="http://jebitok.hashnode.dev" class="btn-floating btn-li mx-1">
+              <li class="list-inline-item pl-2 border-left border-light">
+                <a href="http://jebitok.hashnode.dev" class="text-white">
                   <i class="fa fa-rss-square"> </i>
                 </a>
               </li>
             </ul>
-          <!-- <div class="footer-copyright text-center py-3">© 2021 Copyright:
-            <a href="https://mdbootstrap.com/"> Made by Sharon Jebitok</a>
-          </div>         -->
-        </footer>
+            
+            <div class="text-white">
+              <small>&copy;Software Developer</small>
+            </div>
+           </footer>
       </section>
     </section>
     <script

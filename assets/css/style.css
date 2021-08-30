@@ -34,10 +34,19 @@ html {
 body {
   font-size: 10px;
   margin: 0;
+  font-family: "Crete Round", sans-serif;
+}
+
+.navbar-nav .nav-item:hover {
+  background-color: rgba(180, 190, 203, 0.4);
 }
 
 .navbar-right {
   margin-left: 600px;
+}
+
+.active {
+  color: var(--orange);
 }
 
 .card-subtitle,
@@ -68,6 +77,10 @@ h5 {
 
 p {
   font-size: 20px;
+}
+
+a:hover {
+  color: var(--orange);
 }
 
 .second h4 {
