@@ -3,7 +3,7 @@
   --white: #fff;
   --orange: #f55800;
   --linear: #262626;
-  --gray:  #3C3A39;
+  --gray: #3c3a39;
   --dark: #000;
   --grey: #ccc;
 }
@@ -40,8 +40,14 @@ body {
   margin-left: 600px;
 }
 
-second h1 {
-  font-size: 72;
+.card-title,
+h1,
+h3 {
+  font-family: "Crete Round", sans-serif;
+}
+
+.second h1 {
+  font-size: 72px;
 }
 
 .gray {
@@ -103,7 +109,7 @@ input:focus {
   text-decoration-color: var(--white);
 }
 
-.card-text btn{
+.card-text .btn {
   background-color: transparent;
 }
 
@@ -120,6 +126,12 @@ input:focus {
   position: absolute;
   top: 0;
   bottom: 0;
+}
+
+img,
+.card-img-top {
+  width: 100%;
+  height: auto;
 }
 
 .card-img-overlay img {
@@ -169,12 +181,6 @@ a:link {
   flex-direction: row;
 }
 
-img,
-.card-img-top {
-  width: 100%;
-  height: auto;
-}
-
 .card {
   margin: 5px;
 }
@@ -194,6 +200,7 @@ img,
 
   .skills {
     text-align: center;
+
     /* margin: 0px; */
   }
 }
@@ -259,10 +266,13 @@ img,
 
 .parent {
   position: relative;
+
   /* width: 300px; */
+
   /* height: 300px; */
   margin: 10px;
 }
+
 .child1 {
   position: absolute;
   width: 100%;
@@ -272,6 +282,7 @@ img,
   opacity: 0.9;
   background: red;
 }
+
 .child2 {
   z-index: 1;
   margin: 30px;
