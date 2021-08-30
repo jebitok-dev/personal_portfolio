@@ -40,9 +40,9 @@ body {
   margin-left: 600px;
 }
 
-.card-title,
-h1,
-h3 {
+.card-subtitle,
+.card-text,
+a {
   font-family: "Crete Round", sans-serif;
 }
 
@@ -87,12 +87,6 @@ form {
 
 a {
   color: var(--white);
-}
-
-.card-title,
-h1,
-h3 {
-  font-family: "Crete Round", sans-serif;
 }
 
 input {
