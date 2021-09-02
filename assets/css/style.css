@@ -67,6 +67,10 @@ a {
   border: 20px solid var(--orange);
 }
 
+.fa {
+  font-size: 48px
+}
+
 h2 {
   font-size: 40px;
 }
