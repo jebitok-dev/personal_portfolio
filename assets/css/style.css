@@ -67,8 +67,8 @@ a {
   border: 20px solid var(--orange);
 }
 
-.fa {
-  font-size: 48px
+.fa1 {
+  font-size: 28px;
 }
 
 h2 {
@@ -110,6 +110,15 @@ input {
   outline: 0;
   border-width: 0 0 2px;
   border-color: var(--grey);
+}
+
+input, select, textarea{
+  width: 100%;
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+  /* border-radius: 4px; */
+  box-sizing: border-box;
+  resize: vertical;
 }
 
 input:focus {
@@ -253,7 +262,6 @@ a:link {
 
   .skills {
     margin: 120px;
-    text-align: center;
   }
 
   .btn-responsive {

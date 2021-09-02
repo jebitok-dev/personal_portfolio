@@ -32,7 +32,7 @@
     <title>Sharon Jebitok - Personal Portfolio!</title>
   </head>
   <body>
-    <section class="text-white flex-nowrap flex">
+    <section class="text-white flex">
       <nav class="navbar navbar-expand-lg gray mw-100">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Sharon Jebitok</a>
@@ -42,19 +42,18 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-md-auto gap-2">
               <li class="nav-item rounded">
-                <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-fill me-2"></i>Portfolio</a>
+                <a class="nav-link active" aria-current="page" href="#projects"><i class="bi bi-house-fill me-2"></i>Portfolio</a>
               </li>
               <li class="nav-item rounded">
-                <a class="nav-link" href="#"><i class="bi bi-people-fill me-2"></i>About</a>
+                <a class="nav-link" href="#about"><i class="bi bi-people-fill me-2"></i>About</a>
               </li>
               <li class="nav-item rounded">
-                <a class="nav-link" href="#"><i class="bi bi-telephone-fill me-2"></i>Contact</a>
+                <a class="nav-link" href="#contact"><i class="bi bi-telephone-fill me-2"></i>Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <section>
         <header class="bg-dark mw-100">
           <div class="row">
             <ul class="col-sm first list-inline list-group-horizontal-lg">
@@ -99,13 +98,14 @@
           </div>
         </header>
         <br />
-        <div class="">
-          <div class="text-dark">
+        <section>
+        <div class="container" id="projects">
+          <div class="text-dark row">
             <h3>My Recent Work</h3>
             <hr />
           </div>
           <br />
-          <div class="flex-container justify-content-center row">
+          <div class="row flex-container">
             <div class="col-sm bookstore">
               <img src="./assets/images/bookstore.png" alt="bookstore" />
             </div>
@@ -128,29 +128,31 @@
                   <a href="https://github.com/jebitok-dev/bookstore" target="_blank" class="btn">GitHub</a>
                 </li>
               </ul>
+              <br>
               <a href="https://bookstore-rrdx.netlify.app/" target="_blank" class="bg-success1 btn">See Project</a>
             </div>
           </div>
           <br>
-          <div class="flex-container justify-content-center row">
-            <div class="card text-white col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <div class="row">
+            <div class="text-white col-12 col-md-4 my-3">
               <div class="card">
                 <img class="card-img" src="./assets/images/restaraunt.png" alt="restaraunt">
-               <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                 <h6 class="card-subtitle mb-2">Restaraunt</h6>
-                 <p class="card-text">Landing page that allows user to see about, menu and contact
-                  information. </p>
-                 <div class="link d-flex">
-                   <a href="#" class="card-link success">JavaScript</a>
-                   <a href="#" class="card-link success">HTML</a>
-                   <a href="https://github.com/jebitok-dev/RestaurantPage" target="_blank" class="card-link success">GitHub</a>
-                 </div>
-               </div>
-             </div>
-             <a href="https://deal-restaurantjs.netlify.app/" target="_blank" class="bg-success1 btn see-project">See Project</a>
+                <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                  <h6 class="card-subtitle mb-2">Restaraunt</h6>
+                  <p class="card-text">Landing page that allows user to see about, menu and contact
+                    information. </p>
+                  <div class="link d-flex">
+                    <a href="#" class="card-link success">JavaScript</a>
+                    <a href="#" class="card-link success">HTML</a>
+                    <a href="https://github.com/jebitok-dev/RestaurantPage" target="_blank" class="card-link success">GitHub</a>
+                  </div>
+                </div>
             </div>
+            <a href="https://deal-restaurantjs.netlify.app/" target="_blank" class="bg-success1 btn see-project">See Project</a>
+            <a href="https://github.com/jebitok-dev/RestaurantPage" target="_blank" class="btn see-project bg-success1">See Source <i class="fa fa-github"> </i></a>  
+          </div>
             <br />
-            <div class="card text-white col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="text-white col-12 col-md-4 my-3">
               <div class="card">
                 <img class="card-img" src="./assets/images/twitter-pg.png" alt="twitter">
                 <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
@@ -162,11 +164,11 @@
                     <a href="https://github.com/jebitok-dev/Twitter-Redesign" target="_blank" class="card-link success">GitHub</a>
                   </div>
                 </div>
+                <a href="https://fierce-spire-26749.herokuapp.com/login" target="_blank" class="bg-success1 btn see-project">See Project</a>
               </div>
-              <a href="https://fierce-spire-26749.herokuapp.com/login" target="_blank" class="bg-success1 btn see-project">See Project</a>
             </div>
             <br />
-            <div class="card text-white col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="text-white col-12 col-md-4 my-3">
               <div class="card">
                 <img class="card-img" src="./assets/images/weather1.png" alt="weather">
               <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
@@ -184,8 +186,8 @@
             </div>
             <br />
           </div>
-          <div class="flex-container justify-content-center row">
-            <div class="card text-white col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <div class="row">
+            <div class="text-white col-12 col-md-4 my-3">
               <div class="card">
                 <img class="card-img" src="./assets/images/patashule.png" alt="restaraunt">
               <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
@@ -201,41 +203,41 @@
             <a href="https://patashule-capstone.netlify.app/" target="_blank" class="bg-success1 btn see-project">See Project</a>
             </div>
             <br />
-            <div class="card text-white col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="text-white col-12 col-md-4 my-3">
               <div class="card">
                 <img class="card-img" src="./assets/images/pet-details.png" alt="restaraunt">
-               <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                 <h6 class="card-subtitle mb-2">Adopt Pets</h6>
-                 <p class="card-text">App allows user to filter different pets.</p>
-                 <div class="link d-flex">
-                   <a href="#" class="card-link success">React</a>
-                   <a href="#" class="card-link success">SCSS</a>
-                   <a href="https://github.com/jebitok-dev/catalogue-of-pets/" target="_blank" class="card-link success">GitHub</a>
-                 </div>
-               </div>
-             </div>
+              <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                <h6 class="card-subtitle mb-2">Adopt Pets</h6>
+                <p class="card-text">App allows user to filter different pets.</p>
+                <div class="link d-flex">
+                  <a href="#" class="card-link success">React</a>
+                  <a href="#" class="card-link success">SCSS</a>
+                  <a href="https://github.com/jebitok-dev/catalogue-of-pets/" target="_blank" class="card-link success">GitHub</a>
+                </div>
+              </div>
+            </div>
               <a href="https://catalogue-of-pets.netlify.app/" target="_blank" class="bg-success1 btn see-project">See Project</a>
             </div>
             <br />
-            <div class="card text-white col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="text-white col-12 col-md-4 my-3">
               <div class="card">
                 <img class="card-img" src="./assets/images/game.png" alt="restaraunt">
-               <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                 <h6 class="card-subtitle mb-2">Adopt Pets</h6>
-                 <p class="card-text">A JavaScript & HTML5 game</p>
-                 <div class="link d-flex">
-                   <a href="#" class="card-link success">HTML5</a>
-                   <a href="#" class="card-link success">PhaserJS</a>
-                   <a href="https://github.com/jebitok-dev/platform-game" target="_blank" class="card-link success">GitHub</a>
-                 </div>
-               </div>
-             </div>
+              <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                <h6 class="card-subtitle mb-2">Adopt Pets</h6>
+                <p class="card-text">A JavaScript & HTML5 game</p>
+                <div class="link d-flex">
+                  <a href="#" class="card-link success">HTML5</a>
+                  <a href="#" class="card-link success">PhaserJS</a>
+                  <a href="https://github.com/jebitok-dev/platform-game" target="_blank" class="card-link success">GitHub</a>
+                </div>
+              </div>
+            </div>
               <a href="https://platform-game-with-phaser.netlify.app/" target="_blank" class="bg-success1 btn see-project">See Project</a>
             </div>
             <br />
           </div>
         </div>
-        <div class="row bg-dark">
+        <div class="row bg-dark text-justify margin-l" id="about">
           <article class="col-sm">
             <h1 class="col success">About Me</h1>
             <p class="crete">
@@ -288,8 +290,7 @@
             <br />
           </div>
         </div>
-        <br />
-          <div class="row">
+          <div class="row skills" id="contact">
             <div class="col-sm">
               <h3 class="text-dark">
                 I'm always interested in hearing about new projects, so if you'
@@ -298,11 +299,22 @@
             </div>
             <form class="col-sm">
               <div class="form-group">
-                <input
-                  type="text"
-                  id="exampleInputName1"
-                  placeholder="Full Name"
-                />
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      id="exampleInputName1"
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      id="exampleInputName1"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                </div>
                 <br />
                 <input
                   type="email"
@@ -326,7 +338,7 @@
           <footer class="d-flex justify-content-between flex-wrap bg-dark p-4">
      
             <ul class="list-inline">
-              <li class="list-inline-item pl-2 border-left border-light">
+              <li class="list-inline-item pl-2 border-left border-light x-left">
                 <a href="http://github.com/jebitok-dev" target="_blank" class="text-white">
                   <i class="fa fa-github"> </i>
                 </a>
