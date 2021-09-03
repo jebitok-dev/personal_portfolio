@@ -225,6 +225,14 @@ a:link {
   border-radius: 6px;
 }
 
+.space {
+  margin: 50px;
+}
+
+footer .fa1 {
+  margin: 8px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
  .card h6 {
      font-size: 18px;
