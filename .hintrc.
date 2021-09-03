@@ -10,11 +10,7 @@
   "hints": [
     "button-type",
     "disown-opener",
-    "html-checker",
     "meta-charset-utf-8",
     "meta-viewport"
-  ],
-    "ignorePatterns": [
-      "form"
-    ]
+  ]
 }
