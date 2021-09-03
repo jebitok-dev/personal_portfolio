@@ -51,11 +51,11 @@ body {
 }
 
 .btn-visible {
-  background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    overflow: hidden;
-    outline:none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  overflow: hidden;
+  outline: none;
 }
 
 .active {
@@ -125,10 +125,13 @@ input {
   border-color: var(--grey);
 }
 
-input, select, textarea{
+input,
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border-bottom: 1px solid #ccc;
+
   /* border-radius: 4px; */
   box-sizing: border-box;
   resize: vertical;
