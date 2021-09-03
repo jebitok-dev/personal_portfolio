@@ -45,6 +45,19 @@ body {
   margin-left: 600px;
 }
 
+.btn1 {
+  margin-left: 40px;
+  margin-right: 10px;
+}
+
+.btn-visible {
+  background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    overflow: hidden;
+    outline:none;
+}
+
 .active {
   color: var(--orange);
 }
