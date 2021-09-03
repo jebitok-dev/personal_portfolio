@@ -45,6 +45,15 @@ body {
   margin-left: 600px;
 }
 
+.navbar-toggler {
+  font-size: 0.5rem;
+  line-height: 1;
+  color: var(--gray);
+  background-color: var(--white) !important;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
 .btn1 {
   margin-left: 40px;
   margin-right: 10px;
@@ -127,8 +136,6 @@ textarea {
   width: 100%;
   padding: 12px;
   border-bottom: 1px solid #ccc;
-
-  /* border-radius: 4px; */
   box-sizing: border-box;
   resize: vertical;
 }
@@ -185,6 +192,16 @@ textarea {
   #main-navbar {
     clear: both;
   }
+
+  input,
+select,
+textarea {
+  font-size: 60%;
+  /* padding: 12px;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: vertical; */
+}
 }
 
 #special-color-dark li {
@@ -224,13 +241,41 @@ a:link {
   line-height: 1.3333333;
   border-radius: 6px;
 }
+/* 
+.width-re {
+  width: 60%;
+} */
 
-.space {
+/* .space {
   margin: 50px;
-}
+} */
 
 footer .fa1 {
   margin: 8px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
