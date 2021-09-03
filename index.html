@@ -56,7 +56,7 @@
       </nav>
         <header class="bg-dark mw-100">
           <div class="row">
-            <ul class="col-lg col-md first list-inline width-re list-group-horizontal-lg">
+            <ul class="col-lg col-md col-sm first list-inline width-re list-group-horizontal-lg">
               <li>
                 <a href="https://github.com/jebitok-dev" target="_blank" rel="noopener noreferrer"
                   ><i class="fa fa1 fa-github"></i
@@ -78,7 +78,7 @@
                 ></a>
               </li>
             </ul>
-            <div class="col-lg-4 col-md-4 second">
+            <div class="col-lg-4 col-md-4 col-sm second">
               <h1 class="success">Hey There..</h1>
               <h1 class="success">I'm Sharon</h1>
               <h4>I'am a Software Developer</h4>
@@ -88,7 +88,7 @@
                 have a project you need coded, don't hesitate to contact me.
               </p>
             </div>
-            <div class="col-lg-6 col-md-6 order-last">
+            <div class="col-lg-6 col-md-6 col-sm order-last">
               <img
                 src="./assets/images/Illustration-header.svg"
                 class="img-fluid"
@@ -303,6 +303,7 @@
                 like to chat please get in touch.
               </h3>
             </div>
+            /* webhint-disable */
             <form netlify class="col-sm space">
               <div class="form-group">
                 <div class="row">
@@ -340,10 +341,16 @@
                   id="text"
                 ></textarea>
               </div>
+              <input
+                class="hidden"
+                name="bot-field"
+                placeholder="Don't fill this out if you're a human"
+              />
               <br />
               <button type="submit" class="btn bg-success1">Get in touch</button>
             </form>
           </div>
+          /* webhint-enable */
           <hr />
           <footer class="d-flex justify-content-between flex-wrap bg-dark p-4">
      
@@ -371,7 +378,7 @@
             </ul>
             
             <div class="text-white fa2">
-              <small>&copy;Software Developer</small>
+              <p>&copy;Software Developer</p>
             </div>
            </footer>
     </section>

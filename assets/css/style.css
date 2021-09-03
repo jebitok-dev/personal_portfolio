@@ -85,6 +85,10 @@ a {
   background-color: var(--gray);
 }
 
+.hidden {
+  display: none;
+}
+
 .bookstore {
   border: 20px solid var(--orange);
 }
@@ -194,14 +198,15 @@ textarea {
   }
 
   input,
-select,
-textarea {
-  font-size: 60%;
-  /* padding: 12px;
+  select,
+  textarea {
+    font-size: 60%;
+
+    /* padding: 12px;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
   resize: vertical; */
-}
+  }
 }
 
 #special-color-dark li {
@@ -241,7 +246,8 @@ a:link {
   line-height: 1.3333333;
   border-radius: 6px;
 }
-/* 
+
+/*
 .width-re {
   width: 60%;
 } */
@@ -279,16 +285,17 @@ footer .fa1 {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
- .card h6 {
-     font-size: 18px;
-   }
+  .card h6 {
+    font-size: 18px;
+  }
+
   .card p {
-     font-size: 11px;
-   }
-  
-   html {
-     font-size: 60%;
-   }
+    font-size: 11px;
+  }
+
+  html {
+    font-size: 60%;
+  }
 }
 
 @media (max-width: 945px) {
