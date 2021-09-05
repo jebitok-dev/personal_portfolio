@@ -169,6 +169,7 @@ input:focus {
   position: absolute;
   top: 0;
   bottom: 0;
+ mix-blend-mode: difference;
 }
 
 img,
