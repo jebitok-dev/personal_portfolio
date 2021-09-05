@@ -169,7 +169,11 @@ input:focus {
   position: absolute;
   top: 0;
   bottom: 0;
-  mix-blend-mode: overlay;
+  -webkit-filter: blur(3px); //change the value according to what suits the best
+  -moz-filter: blur(3px); //change the value according to what suits the best
+  -o-filter: blur(3px); //change the value according to what suits the best
+  -ms-filter: blur(3px); //change the value according to what suits the best
+  filter: blur(3px); //change
 }
 
 img,
