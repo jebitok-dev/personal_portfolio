@@ -165,15 +165,15 @@ input:focus {
 }
 
 .card-img-overlay {
-  background-image: linear-gradient(transparent, var(--linear) 90%);
+  /* background-image: linear-gradient(transparent, var(--linear) 90%);*/
   position: absolute;
   top: 0;
   bottom: 0;
-  -webkit-filter: blur(3px); //change the value according to what suits the best
-  -moz-filter: blur(3px); //change the value according to what suits the best
-  -o-filter: blur(3px); //change the value according to what suits the best
-  -ms-filter: blur(3px); //change the value according to what suits the best
-  filter: blur(3px); //change
+  -webkit-filter: blur(3px); 
+  -moz-filter: blur(3px); 
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
 }
 
 img,
