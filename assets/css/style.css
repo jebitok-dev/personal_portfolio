@@ -169,7 +169,7 @@ input:focus {
   position: absolute;
   top: 0;
   bottom: 0;
-  -webkit-filter: blur(3px); 
+  background-color: rgba(#000, 0.4);
 }
 
 img,
