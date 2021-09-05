@@ -170,10 +170,6 @@ input:focus {
   top: 0;
   bottom: 0;
   -webkit-filter: blur(3px); 
-  -moz-filter: blur(3px); 
-  -o-filter: blur(3px);
-  -ms-filter: blur(3px);
-  /*filter: blur(3px);*/
 }
 
 img,
