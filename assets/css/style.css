@@ -165,7 +165,7 @@ input:focus {
 }
 
 .card-img-overlay {
-  background-image: linear-gradient(transparent, var(--linear) 90%);
+ /* background-image: linear-gradient(transparent, var(--linear) 90%);*/
   position: absolute;
   top: 0;
   bottom: 0;
