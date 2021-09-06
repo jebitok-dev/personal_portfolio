@@ -186,27 +186,6 @@ img,
 
 .card-img-overlay {
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-
-  /* background:
-    linear-gradient(
-      to right,
-      hsl(0, 0%, 0%) 0%,
-      hsla(0, 0%, 0%, 0.964) 7.4%,
-      hsla(0, 0%, 0%, 0.918) 15.3%,
-      hsla(0, 0%, 0%, 0.862) 23.4%,
-      hsla(0, 0%, 0%, 0.799) 31.6%,
-      hsla(0, 0%, 0%, 0.73) 39.9%,
-      hsla(0, 0%, 0%, 0.655) 48.2%,
-      hsla(0, 0%, 0%, 0.577) 56.2%,
-      hsla(0, 0%, 0%, 0.497) 64%,
-      hsla(0, 0%, 0%, 0.417) 71.3%,
-      hsla(0, 0%, 0%, 0.337) 78.1%,
-      hsla(0, 0%, 0%, 0.259) 84.2%,
-      hsla(0, 0%, 0%, 0.186) 89.6%,
-      hsla(0, 0%, 0%, 0.117) 94.1%,
-      hsla(0, 0%, 0%, 0.054) 97.6%,
-      hsla(0, 0%, 0%, 0) 100%
-    ); */
 }
 
 textarea {
@@ -225,15 +204,8 @@ textarea {
     clear: both;
   }
 
-  input,
-  select,
-  textarea {
-    font-size: 60%;
-
-    /* padding: 12px;
-  border-bottom: 1px solid #ccc;
-  box-sizing: border-box;
-  resize: vertical; */
+  html {
+    font-size: 70%;
   }
 }
 
@@ -274,15 +246,6 @@ a:link {
   line-height: 1.3333333;
   border-radius: 6px;
 }
-
-/*
-.width-re {
-  width: 60%;
-} */
-
-/* .space {
-  margin: 50px;
-} */
 
 footer .fa1 {
   margin: 8px;
@@ -327,14 +290,9 @@ footer .fa1 {
 }
 
 @media (max-width: 945px) {
-  /* .flex-container {
-    flex-direction: column;
-  } */
 
   .skills {
     text-align: center;
-
-    /* margin: 0px; */
   }
 }
 
@@ -348,7 +306,7 @@ footer .fa1 {
   }
 
   h3 {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   p {
@@ -371,10 +329,6 @@ footer .fa1 {
   .second {
     order: 1;
     display: block;
-  }
-
-  .skills {
-    margin: 120px;
   }
 
   .btn-responsive {
