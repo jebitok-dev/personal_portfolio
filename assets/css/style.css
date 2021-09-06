@@ -59,6 +59,10 @@ body {
   font-size: 28px;
 }
 
+.dark {
+  color: var(--dark);
+}
+
 .btn1 {
   margin-left: 40px;
   margin-right: 10px;
