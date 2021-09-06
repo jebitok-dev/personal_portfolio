@@ -54,6 +54,10 @@ body {
   border-radius: 0.25rem;
 }
 
+.navbar-nav li, .navbar-brand {
+  font-size: 28px;
+}
+
 .btn1 {
   margin-left: 40px;
   margin-right: 10px;
