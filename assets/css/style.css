@@ -6,6 +6,7 @@
   --gray: #3c3a39;
   --dark: #000;
   --grey: #ccc;
+  --wheat: #F5DEB3;
 }
 
 *,
@@ -59,8 +60,8 @@ body {
   font-size: 28px;
 }
 
-.dark {
-  color: var(--dark);
+.wheat {
+  color: var(--wheat);
 }
 
 .btn1 {
