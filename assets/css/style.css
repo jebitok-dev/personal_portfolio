@@ -3,9 +3,10 @@
   --white: #fff;
   --orange: #f55800;
   --linear: #262626;
-  --gray:  #3C3A39;
+  --gray: #3c3a39;
   --dark: #000;
   --grey: #ccc;
+  --wheat: #feeee5;
 }
 
 *,
@@ -21,7 +22,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 html {
@@ -34,22 +35,76 @@ html {
 body {
   font-size: 10px;
   margin: 0;
+  font-family: "Crete Round", sans-serif;
+}
+
+.navbar-nav .nav-item:hover {
+  background-color: rgba(180, 190, 203, 0.4);
 }
 
 .navbar-right {
   margin-left: 600px;
 }
 
-second h1 {
-  font-size: 72;
+.navbar-toggler {
+  font-size: 0.5rem;
+  line-height: 1;
+  color: var(--gray);
+  background-color: var(--white) !important;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.navbar-nav li,
+.navbar-brand {
+  font-size: 28px;
+}
+
+.wheat {
+  color: var(--dark);
+}
+
+.btn1 {
+  margin-left: 40px;
+  margin-right: 10px;
+}
+
+.btn-visible {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  overflow: hidden;
+  outline: none;
+}
+
+.active {
+  color: var(--orange);
+}
+
+.card-subtitle,
+.card-text,
+a {
+  font-family: "Crete Round", sans-serif;
+}
+
+.second h1 {
+  font-size: 72px;
 }
 
 .gray {
   background-color: var(--gray);
 }
 
+.hidden {
+  display: none;
+}
+
 .bookstore {
   border: 20px solid var(--orange);
+}
+
+.fa1 {
+  font-size: 28px;
 }
 
 h2 {
@@ -64,12 +119,16 @@ p {
   font-size: 20px;
 }
 
-.second h4 {
-  font-size: 32px;
+a {
+  color: var(--white);
 }
 
-.space {
-  margin-bottom: 80px;
+a:hover {
+  color: var(--orange);
+}
+
+.second h4 {
+  font-size: 32px;
 }
 
 .crete,
@@ -79,20 +138,20 @@ form {
   font-family: "Inter", sans-serif;
 }
 
-a {
-  color: var(--white);
-}
-
-.card-title,
-h1,
-h3 {
-  font-family: "Crete Round", sans-serif;
-}
-
 input {
   outline: 0;
   border-width: 0 0 2px;
   border-color: var(--grey);
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: vertical;
 }
 
 input:focus {
@@ -103,7 +162,7 @@ input:focus {
   text-decoration-color: var(--white);
 }
 
-.card-text btn {
+.card-text .btn {
   background-color: transparent;
 }
 
@@ -115,15 +174,18 @@ input:focus {
   visibility: unset;
 }
 
-.card-img-overlay {
-  background-image: linear-gradient(transparent, var(--linear) 90%);
-  position: absolute;
-  top: 0;
-  bottom: 0;
+img,
+.card-img-top {
+  width: 100%;
+  height: auto;
 }
 
 .card-img-overlay img {
   position: relative;
+}
+
+.card-img-overlay {
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 textarea {
@@ -140,6 +202,10 @@ textarea {
 @media screen and (max-width: 992px) {
   #main-navbar {
     clear: both;
+  }
+
+  html {
+    font-size: 70%;
   }
 }
 
@@ -169,12 +235,6 @@ a:link {
   flex-direction: row;
 }
 
-img,
-.card-img-top {
-  width: 100%;
-  height: auto;
-}
-
 .card {
   margin: 5px;
 }
@@ -187,14 +247,51 @@ img,
   border-radius: 6px;
 }
 
-@media (max-width: 945px) {
-  .flex-container {
-    flex-direction: column;
+footer .fa1 {
+  margin: 8px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .card h6 {
+    font-size: 18px;
   }
 
+  .card p {
+    font-size: 11px;
+  }
+
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 945px) {
   .skills {
     text-align: center;
-    /* margin: 0px; */
   }
 }
 
@@ -208,7 +305,7 @@ img,
   }
 
   h3 {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   p {
@@ -233,11 +330,6 @@ img,
     display: block;
   }
 
-  .skills {
-    margin: 120px;
-    text-align: center;
-  }
-
   .btn-responsive {
     padding: 1px 5px;
     font-size: 12px;
@@ -255,4 +347,29 @@ img,
     float: left;
     margin: 0;
   }
+}
+
+.parent {
+  position: relative;
+
+  /* width: 300px; */
+
+  /* height: 300px; */
+  margin: 10px;
+}
+
+.child1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  background: red;
+}
+
+.child2 {
+  z-index: 1;
+  margin: 30px;
+  background: green;
 }

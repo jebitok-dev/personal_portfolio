@@ -32,68 +32,54 @@
     <title>Sharon Jebitok - Personal Portfolio!</title>
   </head>
   <body>
-    <section class="text-white container-fluid flex">
-      <nav class="navbar navbar-expand-lg gray">
-        <div class="container">
+    <section class="text-white flex">
+      <nav class="navbar navbar-expand-lg gray mw-100">
+        <div class="container-fluid">
           <a class="navbar-brand" href="#">Sharon Jebitok</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Portfolio</a
-                >
+            <ul class="navbar-nav ms-md-auto gap-2">
+              <li class="nav-item rounded">
+                <a class="nav-link active" aria-current="page" href="#projects"><i class="bi bi-house-fill me-2"></i>Portfolio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+              <li class="nav-item rounded">
+                <a class="nav-link" href="#about"><i class="bi bi-people-fill me-2"></i>About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="fa fa-envelope nav-link"></a>
+              <li class="nav-item rounded">
+                <a class="nav-link" href="#contact"><i class="bi bi-telephone-fill me-2"></i>Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <section>
-        <header class="bg-dark">
+        <header class="bg-dark mw-100">
           <div class="row">
-            <ul class="col-sm first list-inline list-group-horizontal-lg">
+            <ul class="col-lg col-md col-sm first list-inline width-re list-group-horizontal-lg">
               <li>
-                <a href="http://github.com/jebitok-dev"
-                  ><i class="fa fa-github"></i
+                <a href="https://github.com/jebitok-dev" target="_blank" rel="noopener noreferrer"
+                  ><i class="fa fa1 fa-github"></i
                 ></a>
               </li>
               <li>
-                <a href="http://linkedIn.com/In/sharon-jebitok"
-                  ><i class="fa fa-linkedin"></i
+                <a href="https://www.linkedin.com/in/sharon-jebitok/" target="_blank" rel="noopener noreferrer"
+                  ><i class="fa fa1 fa-linkedin"></i
                 ></a>
               </li>
               <li>
-                <a href="http://twitter.com/sharonjebitok"
-                  ><i class="fa fa-twitter"></i
+                <a href="https://twitter.com/sharonjebitok" target="_blank" rel="noopener noreferrer"
+                  ><i class="fa fa1 fa-twitter"></i
                 ></a>
               </li>
               <li>
-                <a href="http://jebitok.hashnode.dev">
-                  <i class="fa fa-rss-square"></i
+                <a href="https://jebitok.hashnode.dev"  target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa1 fa-rss-square"></i
                 ></a>
               </li>
             </ul>
-            <div class="col-sm second">
-              <h1 class="success">Hey There.</h1>
+            <div class="col-lg-4 col-md-4 col-sm second">
+              <h1 class="success">Hey There..</h1>
               <h1 class="success">I'm Sharon</h1>
               <h4>I'am a Software Developer</h4>
               <p class="crete">
@@ -102,7 +88,7 @@
                 have a project you need coded, don't hesitate to contact me.
               </p>
             </div>
-            <div class="col-sm order-last">
+            <div class="col-lg-6 col-md-6 col-sm order-last">
               <img
                 src="./assets/images/Illustration-header.svg"
                 class="img-fluid"
@@ -112,17 +98,18 @@
           </div>
         </header>
         <br />
-        <div class="">
-          <div class="text-dark">
+        <!-- <section class="mt-5 py-3"> -->
+        <div class="container" id="projects">
+          <div class="text-dark row">
             <h3>My Recent Work</h3>
             <hr />
           </div>
           <br />
-          <div class="flex-container justify-content-center row">
+          <div class="row">
             <div class="col-sm bookstore">
-              <img src="./assets/images/bookstore.png" alt="bookstore" />
+              <img src="./assets/images/bookstore.png" class="img-fluid" alt="bookstore" />
             </div>
-            <div class="col-sm text-dark">
+            <div class="col-sm text-dark p-3">
               <h5>Multi-Post Stories</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
@@ -138,192 +125,126 @@
                   <a href="#" class="btn">HTML</a>
                 </li>
                 <li class="list-group-item">
-                  <a href="#" class="btn">GitHub</a>
+                  <a href="https://github.com/jebitok-dev/bookstore" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
                 </li>
               </ul>
-              <a href="https://bookstore-rrdx.netlify.app/" class="bg-success1 btn btn-sm">See Project</a>
+              <br>
+              <a href="https://bookstore-rrdx.netlify.app/" target="_blank" rel="noopener noreferrer" class="bg-dark text-white btn border">See Project <i class="fa fa-external-link-square"> </i></a>
             </div>
           </div>
           <br>
-          <div class="flex-container justify-content-center row">
-            <div class="card text-white col-lg-3 col-md-3 col-sm-12 col-xs-12">
-              <img
-                src="./assets/images/restaraunt.png"
-                class="card-img"
-                alt="restaraunt"
-              />
-              <div class="card-img-overlay">
-                <h5 class="card-title">Restaraunt</h5>
-                <p class="card-text">
-                  Landing page that allows user to see about, menu and contact
-                  information.
-                </p>
-                <ul class="list-group list-group-horizontal card-text">
-                  <li class="list-group-item">
-                    <a href="#" class="btn">JavaScript</a>
-                  </li>
-                  <li class="list-group-item">
-                    <a href="#" class="btn">HTML</a>
-                  </li>
-                  <li class="list-group-item">
-                    <a href="#" class="btn">GitHub</a>
-                  </li>
-                </ul>
+          <div class="row">
+            <div class="wheat col-12 col-md-4 my-3">
+              <div class="card">
+                <img class="card-img img-fluid" src="./assets/images/restaraunt.png" alt="restaraunt">
+                <div class="card-img-overlay wheat d-flex flex-column justify-content-center">
+                  <h6 class="card-subtitle mb-2">Restaraunt</h6>
+                  <p class="card-text">Landing page that allows user to see about, menu and contact
+                    information. </p>
+                  <div class="link d-flex">
+                    <a href="#" class="card-link wheat">JavaScript</a>
+                    <a href="#" class="card-link wheat">HTML</a>
+                    <a href="https://github.com/jebitok-dev/RestaurantPage" target="_blank" rel="noopener noreferrer" class="card-link wheat">GitHub</a>
+                  </div>
+                </div>
+            </div>
+            <a href="https://github.com/jebitok-dev/RestaurantPage" target="_blank" rel="noopener noreferrer" class="btn text-dark see-project bg-light border">See Source <i class="fa fa-github"> </i></a>
+            <a href="https://deal-restaurantjs.netlify.app/" target="_blank" rel="noopener noreferrer" class="bg-dark text-white btn see-project border">See Project <i class="fa fa-external-link-square"> </i></a>  
+          </div>
+            <br />
+            <div class="bg-transparent col-12 col-md-4 my-3">
+              <div class="card">
+                <img class="card-img img-fluid" src="./assets/images/twitter-pg.png" alt="twitter">
+                <div class="card-img-overlay bg-transparent wheat d-flex flex-column justify-content-center">
+                  <h6 class="card-subtitle mb-2">Twitter-Redesign</h6>
+                  <p class="card-text">App allows to sign-up or log-in, tweet, follow other users.</p>
+                  <div class="link d-flex text-white">
+                    <a href="#" class="card-link wheat">Ruby on Rails</a>
+                    <a href="#" class="card-link wheat">SCSS</a>
+                    <a href="https://github.com/jebitok-dev/Twitter-Redesign" target="_blank" rel="noopener noreferrer" class="wheat card-link">GitHub</a>
+                  </div>
+                </div>
               </div>
-              <a href="https://deal-restaurantjs.netlify.app/" class="bg-success1 btn d-none d-sm-block d-md-none see-project">See Project</a>
+              <a href="https://github.com/jebitok-dev/Twitter-Redesign" target="_blank" rel="noopener noreferrer" class="see-project text-dark btn bg-light border">See Source <i class="fa fa-github"> </i></a>
+              <a href="https://fierce-spire-26749.herokuapp.com/login" target="_blank" rel="noopener noreferrer" class="bg-dark text-white btn see-project border">See Project <i class="fa fa-external-link-square"> </i></a>
             </div>
             <br />
-            <div class="card text-white col-lg-3 col-md-3 col-sm-12 col-xs-12">
-              <img
-                src="./assets/images/twitter-pg.png"
-                class="card-img"
-                alt="twitter"
-              />
-              <div class="card-img-overlay">
-                <h5 class="card-title">Twitter</h5>
-                <p class="card-text">
-                  App allows to sign-up or log in, tweet, follow other users.
-                </p>
-                <ul class="list-group list-group-horizontal card-text">
-                  <li class="list-group-item">
-                    <a href="#" class="btn">RoR</a>
-                  </li>
-                  <br />
-                  <li class="list-group-item">
-                    <a href="#" class="btn">SCSS</a>
-                  </li>
-                  <br />
-                  <li class="list-group-item">
-                    <a href="https://github.com/jebitok-dev/Twitter-Redesign" class="btn">GitHub</a>
-                  </li>
-                  <br />
-                </ul>
+            <div class="bg-transparent col-12 col-md-4 my-3">
+              <div class="card">
+                <img class="card-img img-fluid" src="./assets/images/weather1.png" alt="weather">
+              <div class="card-img-overlay wheat bg-transparent d-flex flex-column justify-content-center">
+                <h6 class="card-subtitle mb-2">Weather App</h6>
+                <p class="card-text">Allows users to search for the real-time weather of city</p>
+                <div class="link d-flex">
+                  <a href="#" class="card-link wheat">JavaScript</a>
+                  <a href="#" class="card-link wheat">Open-Weather-API</a>
+                  <a href="https://github.com/jebitok-dev/Weather-App" target="_blank" rel="noopener noreferrer" class="card-link  wheat">GitHub</a>
+                </div>
               </div>
-              <a href="https://fierce-spire-26749.herokuapp.com/login" class="bg-success1 btn d-none d-sm-block d-md-none see-project">See Project</a>
-            </div>
-            <br />
-            <div class="card text-white col-lg-3 col-md-3 col-sm-12 col-xs-12">
-              <img
-                src="./assets/images/weather1.png"
-                class="card-img"
-                alt="..."
-              />
-              <div class="card-img-overlay">
-                <h5 class="card-title">Weather App</h5>
-                <p class="card-text">
-                  Allows users to search for the real-time weather condition of
-                  a given city.
-                </p>
-                <ul class="list-group list-group-horizontal card-text">
-                  <li class="list-group-item">
-                    <a href="#" class="btn">JavaScript</a>
-                  </li>
-                  <br />
-                  <li class="list-group-item">
-                    <a href="#" class="btn">API</a>
-                  </li>
-                  <br />
-                  <li class="list-group-item">
-                    <a href="https://github.com/jebitok-dev/Weather-App" class="btn">Github</a>
-                  </li>
-                  <br />
-                </ul>
               </div>
-              <a href="https://weather-app-async.netlify.app/" class="bg-success1 btn d-none d-sm-block d-md-none see-project">See Project</a>
+              <a href="https://github.com/jebitok-dev/Weather-App" target="_blank" rel="noopener noreferrer" class="btn text-dark see-project bg-light border">See Source <i class="fa fa-github"> </i></a>
+              <a href="https://weather-app-async.netlify.app/" target="_blank" rel="noopener noreferrer" class="bg-dark text-white btn see-project border">See Project <i class="fa fa-external-link-square"> </i></a>
             </div>
             <br />
           </div>
-          <div class="flex-container justify-content-center row">
-            <div class="card text-white col-lg-3 col-md-3 col-sm-12 col-xs-12">
-              <img
-                src="./assets/images/patashule.png"
-                class="card-img"
-                alt="..."
-              />
-              <div class="card-img-overlay">
-                <h5 class="card-title">PataShule</h5>
-                <p class="card-text">
-                  Landing page that allows user to see about, menu and contact
-                  information.
-                </p>
-                <ul class="list-group list-group-horizontal card-text">
-                  <li class="list-group-item">
-                    <a href="#" class="btn">Bootstrap</a>
-                  </li>
-                  <br />
-                  <li class="list-group-item">
-                    <a href="https://github.com/jebitok-dev/Capstone1-html" class="btn">GitHub</a>
-                  </li>
-                  <br />
-                </ul>
+          <div class="row">
+            <div class="bg-transparent col-12 col-md-4 my-3">
+              <div class="card">
+                <img class="card-img img-fluid" src="./assets/images/patashule.png" alt="restaraunt">
+              <div class="card-img-overlay wheat bg-transparent d-flex flex-column justify-content-center">
+                <h6 class="card-subtitle mb-2">PataShule</h6>
+                <p class="card-text">Landing page that allows user to see about, menu and contact
+                  info. </p>
+                <div class="link d-flex">
+                  <a href="#" class="card-link wheat">Bootstrap</a>
+                  <a href="https://github.com/jebitok-dev/Capstone1-html" target="_blank" rel="noopener noreferrer" class="card-link wheat">GitHub</a>
+                </div>
               </div>
-              <a href="https://patashule-capstone.netlify.app/" class="bg-success1 btn d-none d-sm-block d-md-none see-project">See Project</a>
+            </div>
+            <a href="https://github.com/jebitok-dev/Capstone1-html" target="_blank" rel="noopener noreferrer" class="text-dark flex-end btn see-project bg-light border">See Source <i class="fa fa-github"> </i></a>
+            <a href="https://patashule-capstone.netlify.app/" target="_blank" rel="noopener noreferrer" class="bg-dark text-white btn see-project border">See Project <i class="fa fa-external-link-square"> </i></a>
             </div>
             <br />
-            <div class="card text-white col-lg-3 col-md-3 col-sm-12 col-xs-12">
-              <img
-                src="./assets/images/pet-details.png"
-                class="card-img"
-                alt="..."
-              />
-              <div class="card-img-overlay">
-                <h5 class="card-title">Adopt Pets</h5>
-                <p class="card-text">
-                  Landing page that allows user to see about, menu and contact
-                  information.
-                </p>
-                <ul class="list-group list-group-horizontal card-text">
-                  <li class="list-group-item">
-                    <a href="#" class="btn">JavaScript</a>
-                  </li>
-                  <br />
-                  <li class="list-group-item">
-                    <a href="#" class="btn">HTML</a>
-                  </li>
-                  <br />
-                  <li class="list-group-item">
-                    <a href="https://github.com/jebitok-dev/catalogue-of-pets/" class="btn">GitHub</a>
-                  </li>
-                  <br />
-                </ul>
+            <div class="bg-transparent col-12 col-md-4 my-3">
+              <div class="card">
+                <img class="card-img img-fluid" src="./assets/images/pet-details.png" alt="restaraunt">
+              <div class="card-img-overlay wheat bg-transparent d-flex flex-column justify-content-center">
+                <h6 class="card-subtitle mb-2">Adopt Pets</h6>
+                <p class="card-text">App allows user to filter different pets.</p>
+                <div class="link d-flex">
+                  <a href="#" class="card-link wheat">React</a>
+                  <a href="#" class="card-link wheat">SCSS</a>
+                  <a href="https://github.com/jebitok-dev/catalogue-of-pets/" target="_blank" rel="noopener noreferrer" class="card-link wheat">GitHub</a>
+                </div>
               </div>
-              <a href="https://catalogue-of-pets.netlify.app/" class="bg-success1 btn d-none d-sm-block d-md-none see-project">See Project</a>
+            </div>
+              <a href="https://github.com/jebitok-dev/catalogue-of-pets/" target="_blank" rel="noopener noreferrer" class="btn see-project text-dark bg-light border">See Source <i class="fa fa-github"> </i></a>
+              <a href="https://catalogue-of-pets.netlify.app/" target="_blank" rel="noopener noreferrer" class="bg-dark text-white btn see-project border">See Project <i class="fa fa-external-link-square"> </i></a>
             </div>
             <br />
-            <div class="card text-white col-lg-3 col-md-3 col-sm-12 col-xs-12">
-              <img
-                src="./assets/images/game.png"
-                class="card-img"
-                alt="game"
-              />
-              <div class="card-img-overlay">
-                <h5 class="card-title">Platform Game</h5>
-                <p class="card-text">
-                  Landing page that allows user to see about, menu and contact
-                  information.
-                </p>
-                <ul class="list-group list-group-horizontal card-text">
-                  <li class="list-group-item">
-                    <a href="#" class="btn">JavaScript</a>
-                  </li>
-                  <br />
-                  <li class="list-group-item">
-                    <a href="#" class="btn">HTML</a>
-                  </li>
-                  <br />
-                  <li class="list-group-item">
-                    <a href="https://github.com/jebitok-dev/platform-game" class="btn">GitHub</a>
-                  </li>
-                  <br />
-                </ul>
+            <div class="bg-transparent col-12 col-md-4 my-3">
+              <div class="card">
+                <img class="card-img img-fluid" src="./assets/images/game.png" alt="restaraunt">
+              <div class="card-img-overlay wheat bg-transparent d-flex flex-column justify-content-center">
+                <h6 class="card-subtitle mb-2">Phaser Game</h6>
+                <p class="card-text">A JavaScript & HTML5 game</p>
+                <div class="link d-flex">
+                  <a href="#" class="card-link wheat">HTML5</a>
+                  <a href="#" class="card-link wheat">PhaserJS</a>
+                  <a href="https://github.com/jebitok-dev/platform-game" target="_blank" rel="noopener noreferrer" class="card-link wheat">GitHub</a>
+                </div>
               </div>
-              <a href="https://platform-game-with-phaser.netlify.app/" class="bg-success1 btn d-none d-sm-block d-md-none see-project">See Project</a>
+            </div>
+            <div class="gap-2">
+              <a href="https://github.com/jebitok-dev/platform-game" target="_blank" rel="noopener noreferrer" class="text-dark btn see-project bg-light border">See Source <i class="fa fa-github"> </i></a>
+              <a href="https://platform-game-with-phaser.netlify.app/" target="_blank" rel="noopener noreferrer" class="bg-dark text-white btn see-project border">See Project <i class="fa fa-external-link-square"> </i></a>
+            </div>
             </div>
             <br />
           </div>
         </div>
-        <div class="row bg-dark">
-          <article class="col-sm">
+        <div class="row bg-dark text-justify margin-l" id="about">
+          <article class="col-sm space">
             <h1 class="col success">About Me</h1>
             <p class="crete">
               Hello I'm a software developer! I can help you build a product,
@@ -332,14 +253,14 @@
               don't hesitate to contact me.
             </p>
             <a
-              href="https://drive.google.com/file/d/1AhzmQeH-x7rpP3UtJcgolO03U_w7XUdg/view?usp=sharing"
-              class="btn bg-success1 btn-sm"
+              href="https://drive.google.com/file/d/1pzrYbfzbJMmH7ngrzZBxyZ3B6O7Zycyj/view?usp=sharing" target="_blank" rel="noopener noreferrer"
+              class="btn bg-light btn-sm"
               download="Download-Resume.pdf"
             >
-              Get My Resume
+              Get My Resume <i class="fa fa-download"> </i>
             </a>
           </article>
-          <figure class="col-sm">
+          <figure class="col-sm space">
             <img
               src="./assets/images/Frame.png"
               class="img-fluid"
@@ -350,7 +271,7 @@
         <hr class="secondary" />
         <div class="bg-dark">
           <div class="row skills">
-            <div class="col-sm">
+            <div class="col-sm-4">
               <h4><i class="fa fa-diamond success"></i> Language</h4>
               <p>JavaScript</p>
               <p>Ruby</p>
@@ -358,7 +279,7 @@
               <p>CSS</p>
             </div>
             <br />
-            <div class="col-sm">
+            <div class="col-sm-4">
               <h4><i class="fa fa-square success"></i>Frameworks</h4>
               <p>Bootstrap</p>
               <p>Ruby on Rails</p>
@@ -366,7 +287,7 @@
               <p>React</p>
             </div>
             <br />
-            <div class="col-sm">
+            <div class="col-sm-4 space">
               <h4><i class="fa fa-circle success"></i>Skills</h4>
               <p>GitHub</p>
               <p>Netlify</p>
@@ -375,72 +296,91 @@
             <br />
           </div>
         </div>
-        <br />
-        <div class="row">
-          <div class="col-sm">
-            <h3 class="text-dark">
-              I'm always interested in hearing about new projects, so if you'
-              like to chat please get in touch.
-            </h3>
-          </div>
-          <form class="col-sm">
-            <div class="form-group">
+          <div class=" row justify-content-center" id="contact">
+            <div class="col-sm-3 space">
+              <h3 class="text-dark text-justify">
+                I'm always interested in hearing about new projects, so if you'
+                like to chat please get in touch.
+              </h3>
+            </div>
+            <form netlify class="col-sm-6 skills crete" data-netlify-honeypot="bot-field">
+              <div class="form-group">
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      name="first"
+                      id="first"
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      name="last"
+                      id="last"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                </div>
+                <br />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email Address"
+                />
+              </div>
+              <br />
+              <div class="">
+                <textarea
+                  placeholder="Enter text here"
+                  rows="5"
+                  name="text"
+                  type="message"
+                  id="text"
+                ></textarea>
+              </div>
               <input
-                type="text"
-                id="exampleInputName1"
-                placeholder="Full Name"
+                class="hidden"
+                name="bot-field"
+                placeholder="Don't fill this out if you're a human"
               />
               <br />
-              <input
-                type="email"
-                id="exampleInputEmail1"
-                placeholder="Email Address"
-              />
-            </div>
-            <br />
-            <div class="">
-              <textarea
-                placeholder="Enter text here"
-                rows="5"
-                id="text"
-              ></textarea>
-            </div>
-            <br />
-            <button type="submit" class="btn bg-success1">Get in touch</button>
-          </form>
-        </div>
-        <hr />
-        <footer class="page-footer font-small text-dark">
-
-          <!-- Footer Elements -->
-            <!-- Social buttons -->
-            <ul class="list-unstyled list-inline text-center" id="special-color-dark">
-              <li class="list-inline-item">
-                <a href="http://github.com/jebitok-dev" class="btn-floating btn-fb mx-1">
-                  <i class="fa fa-github"> </i>
+              <button type="submit" class="btn text-white bg-dark">Get in touch</button>
+            </form>
+          </div>
+          <!-- hint-enable -->
+          <hr />
+          <footer class="d-flex justify-content-between flex-wrap bg-dark p-4">
+     
+            <ul class="list-inline">
+              <li class="list-inline-item pl-2 border-left border-light x-left">
+                <a href="http://github.com/jebitok-dev" target="_blank" rel="noopener noreferrer" class="text-white">
+                  <i class="fa fa1 fa-github"> </i>
                 </a>
               </li>
-              <li class="list-inline-item">
-                <a href="http://linkedIn.com/IN/sharon-jebitok" class="btn-floating btn-tw mx-1">
-                  <i class="fa fa-linkedin"> </i>
+              <li class="list-inline-item pl-2 border-left border-light">
+                <a href="https://www.linkedin.com/in/sharon-jebitok/" target="_blank" rel="noopener noreferrer" class="text-white">
+                  <i class="fa fa1 fa-linkedin"> </i>
                 </a>
               </li>
-              <li class="list-inline-item">
-                <a href="http://twitter.com/sharonjebitok" class="btn-floating btn-gplus mx-1">
-                  <i class="fa fa-twitter"> </i>
+              <li class="list-inline-item pl-2 border-left border-light">
+                <a href="http://twitter.com/sharonjebitok" target="_blank" rel="noopener noreferrer" class="text-white">
+                  <i class="fa fa1 fa-twitter"> </i>
                 </a>
               </li>
-              <li class="list-inline-item">
-                <a href="http://jebitok.hashnode.dev" class="btn-floating btn-li mx-1">
-                  <i class="fa fa-rss-square"> </i>
+              <li class="list-inline-item pl-2 border-left border-light">
+                <a href="http://jebitok.hashnode.dev" target="_blank" rel="noopener noreferrer" class="text-white">
+                  <i class="fa fa1 fa-rss-square"> </i>
                 </a>
               </li>
             </ul>
-          <!-- <div class="footer-copyright text-center py-3">© 2021 Copyright:
-            <a href="https://mdbootstrap.com/"> Made by Sharon Jebitok</a>
-          </div>         -->
-        </footer>
-      </section>
+            
+            <div class="text-white fa2">
+              <p>&copy;Software Developer</p>
+            </div>
+           </footer>
     </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
