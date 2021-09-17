@@ -185,7 +185,12 @@ img,
 }
 
 .card-img-overlay {
+<<<<<<< HEAD
   background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+=======
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+/*  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); */
+>>>>>>> 8c07b8d29d5b1c1e59af19a6beb8417e74cca35c
 }
 
 textarea {
