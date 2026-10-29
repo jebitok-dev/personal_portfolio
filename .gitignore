@@ -105,3 +105,13 @@ dist
 
 
 search.html/
+# Next.js
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# Claude Code (keep local, do not commit)
+CLAUDE.md
+CLAUDE.local.md
+.claude/
