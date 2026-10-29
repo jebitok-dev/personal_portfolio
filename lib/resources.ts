@@ -16,7 +16,9 @@ function slugify(text: string): string {
 
 // Reads a resource's markdown and renders it to HTML, adding ids to the
 // top-level (h1) headings so the on-page table of contents can link to them.
+// External resources (no `file`, just an `href`) are returned as-is.
 export async function renderResource(resource: Resource): Promise<RenderedResource> {
+  if (!resource.file) return { ...resource, html: "", sections: [] };
   const raw = await readFile(join(process.cwd(), "content/resources", resource.file), "utf8");
   const sections: Section[] = [];
   const renderer = new marked.Renderer();

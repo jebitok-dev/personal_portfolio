@@ -1,5 +1,5 @@
 import Work, { TrackButton } from "@/components/Work";
-import { about, badges, contacts, profile, skills, stats } from "@/content/site";
+import { about, aiWriting, badges, contacts, profile, skills, stats } from "@/content/site";
 import { getPosts } from "@/lib/posts";
 
 const NAV = [
@@ -35,10 +35,13 @@ export default async function Home() {
           </p>
           <div className="ctas">
             <TrackButton track="Security" className="btn btn-primary">
-              Web3 &amp; Security work <span className="arrow">→</span>
+              Security work <span className="arrow">→</span>
             </TrackButton>
             <TrackButton track="Full-stack" className="btn btn-ghost">
-              Full-stack work <span className="arrow">→</span>
+              Full-stack <span className="arrow">→</span>
+            </TrackButton>
+            <TrackButton track="Web3" className="btn btn-web3">
+              Web3 &amp; blockchain <span className="arrow">→</span>
             </TrackButton>
           </div>
         </header>
@@ -74,18 +77,33 @@ export default async function Home() {
 
         <section id="writing" className="section">
           <h2 className="label">Writing</h2>
+
+          <h3 className="subhead">AI security writeups</h3>
+          <div className="linklist">
+            {aiWriting.map((w) => (
+              <a key={w.href} href={w.href} {...ext}>
+                <span className="t">{w.title}</span>
+                <span className="d">{w.date}</span>
+              </a>
+            ))}
+          </div>
+
           {posts.length > 0 && (
-            <div className="posts">
-              {posts.map((post) => (
-                <a key={post.href} href={post.href} className="post" {...ext}>
-                  <div className="date">{post.date}</div>
-                  <h3>{post.title}</h3>
-                  <p>{post.excerpt}</p>
-                  <span className="more">Read post →</span>
-                </a>
-              ))}
-            </div>
+            <>
+              <h3 className="subhead">Latest posts</h3>
+              <div className="posts">
+                {posts.map((post) => (
+                  <a key={post.href} href={post.href} className="post" {...ext}>
+                    <div className="date">{post.date}</div>
+                    <h3>{post.title}</h3>
+                    <p>{post.excerpt}</p>
+                    <span className="more">Read post →</span>
+                  </a>
+                ))}
+              </div>
+            </>
           )}
+
           <a href={profile.blogUrl} className="all" {...ext}>See all posts on CyberWithSharon →</a>
         </section>
 
@@ -104,9 +122,13 @@ export default async function Home() {
         <section id="contact" className="contact">
           <div>
             <h2>Open to security research<br />&amp; engineering roles.</h2>
-            <a href={profile.resumeUrl} className="btn btn-solid" {...ext}>
-              Resume <span className="arrow">PDF</span>
-            </a>
+            <div className="ctas">
+              {profile.resumes.map((r, i) => (
+                <a key={r.href} href={r.href} className={i === 0 ? "btn btn-solid" : "btn btn-ghost"} {...ext}>
+                  {r.label} <span className="arrow">PDF</span>
+                </a>
+              ))}
+            </div>
           </div>
           <div className="contact-list">
             {contacts.filter((c) => c.href).map((c) => (

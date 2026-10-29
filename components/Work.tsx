@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { featuredFinding, projects, type Link, type Track } from "@/content/site";
+import { projects, type Link, type Track } from "@/content/site";
 
 type Filter = "All" | Track;
-const FILTERS: Filter[] = ["All", "Web3", "Security", "Full-stack"];
+const FILTERS: Filter[] = ["All", "Security", "Full-stack", "Web3"];
 const TRACK_EVENT = "portfolio:set-track";
 
 // Lets other components (the hero buttons) switch the work filter.
@@ -34,33 +34,6 @@ function LinkList({ links }: { links: Link[] }) {
   );
 }
 
-function FeaturedFinding() {
-  const [open, setOpen] = useState(false);
-  const f = featuredFinding;
-  return (
-    <article className="finding">
-      <div className="meta">
-        <span className="sev">{f.severity}</span>
-        <span className="src">{f.source}</span>
-        {!f.ready && <span className="draft">draft · hidden on live site</span>}
-      </div>
-      <h3>{f.title}</h3>
-      <p className="summary">{f.summary}</p>
-      <button className="toggle" aria-expanded={open} onClick={() => setOpen((o) => !o)}>
-        {open ? "Hide finding ↑" : "Read the finding ↓"}
-      </button>
-      {open && (
-        <div className="details">
-          <div><h4>Finding</h4><p>{f.finding}</p></div>
-          <div><h4>Impact</h4><p>{f.impact}</p></div>
-          <div><h4>Recommendation</h4><p>{f.recommendation}</p></div>
-        </div>
-      )}
-      <LinkList links={f.links} />
-    </article>
-  );
-}
-
 export default function Work() {
   const [filter, setFilter] = useState<Filter>("All");
 
@@ -71,9 +44,6 @@ export default function Work() {
   }, []);
 
   const visible = projects.filter((p) => filter === "All" || p.tags.includes(filter));
-  // The finding shows in development for preview, and in production only once it's marked ready.
-  const showFinding =
-    filter !== "Full-stack" && (featuredFinding.ready || process.env.NODE_ENV === "development");
 
   return (
     <section id="work" className="section">
@@ -90,8 +60,6 @@ export default function Work() {
           ))}
         </div>
       </div>
-
-      {showFinding && <FeaturedFinding />}
 
       <div className="grid">
         {visible.map((p) => (
