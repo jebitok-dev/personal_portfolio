@@ -110,3 +110,8 @@ search.html/
 out/
 next-env.d.ts
 *.tsbuildinfo
+
+# Claude Code (keep local, do not commit)
+CLAUDE.md
+CLAUDE.local.md
+.claude/
