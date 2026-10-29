@@ -260,7 +260,7 @@ export const tryhackme = {
       name: "AI Security",
       note: "LLM / ML · 17 findings",
       paths: [
-        { name: "AI Security", pct: null },
+        { name: "AI Security", pct: 100 },
       ],
     },
   ],
@@ -279,11 +279,15 @@ export const skills = [
       "Threat modelling",
       "Secure code review",
       "Vulnerability research",
-      "Dependency auditing",
       "OWASP Top 10 / LLM Top 10",
+      "MITRE ATT&CK / ATLAS",
       "SIEM / Splunk",
       "Malware & log analysis",
       "OSINT",
+      "Nmap",
+      "Burp Suite",
+      "Metasploit",
+      "Wireshark",
     ],
   },
   {
@@ -297,6 +301,7 @@ export const skills = [
       "Rust",
       "Solidity",
       "Bash",
+      "PowerShell",
     ],
   },
   {

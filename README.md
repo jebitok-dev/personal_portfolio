@@ -1,6 +1,6 @@
 # Sharon Jebitok - Portfolio
 
-Personal portfolio covering security research (AI security, smart-contract audits, bug bounty, SOC/DFIR), software engineering, and Web3.
+Personal portfolio covering security research (AI security, web security, SOC/DFIR, smart-contract audits, bug bounty), software engineering, and Web3.
 
 ## Built with
 

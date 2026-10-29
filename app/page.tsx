@@ -7,7 +7,7 @@ const NAV = [
   ["#research", "Research"],
   ["#writing", "Writing"],
   ["#skills", "Skills"],
-  ["/resources/", "Resources"],
+  ["/cheatsheet/", "Cyber cheatsheet"],
   ["#contact", "Contact"],
 ];
 
@@ -112,7 +112,7 @@ export default async function Home() {
                 <h3 className="subhead">{group.name}</h3>
                 <div className="linklist">
                   {group.items.slice(0, WRITING_PER_CATEGORY).map((w) => (
-                    <a key={w.href} href={w.href} {...ext}>
+                    <a key={w.href} href={w.href} title={w.title} {...ext}>
                       <span className="t">{w.title}</span>
                       <span className="d">{w.date}</span>
                     </a>

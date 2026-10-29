@@ -263,7 +263,9 @@ a.card .links span { font-family: var(--font-mono); font-size: 12px; letter-spac
 .section.tight { padding: 52px 0; }
 .skills h3 { margin-bottom: 12px; padding-bottom: 10px; }
 .skills li { font-size: 12.5px; }
-.contact { padding: 52px 0 0; gap: 32px; }
+.contact { padding: 52px 0 0; gap: 32px 48px; align-items: start; }
+/* Nudge the contact list down so it lines up with the heading, not the eyebrow */
+.contact-list { padding-top: 6px; }
 .footer { margin-top: 44px; }
 /* Skills: even columns down the breakpoints */
 @media (max-width: 860px) { .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 28px; } }
@@ -282,3 +284,27 @@ a.card .links span { font-family: var(--font-mono); font-size: 12px; letter-spac
 .bar > span { display: block; height: 100%; background: var(--ac); }
 @media (max-width: 860px) { .paths { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 28px; } }
 @media (max-width: 460px) { .paths { grid-template-columns: 1fr; } }
+
+/* Cyber cheatsheet: jump-to index */
+.cheat-index { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px; }
+.cheat-index a {
+  font-family: var(--font-mono); font-size: 13px; color: var(--text-2);
+  border: 1px solid var(--line); padding: 10px 13px;
+}
+.cheat-index a:hover { border-color: var(--ac); color: var(--ac); text-decoration: none; }
+
+/* Cyber cheatsheet: quick reference chips */
+.quick-links { display: flex; flex-wrap: wrap; gap: 8px; }
+.quick-links a {
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.02em; color: var(--text-2);
+  border: 1px solid var(--line); padding: 7px 11px; background: var(--surface-2);
+}
+.quick-links a:hover { border-color: var(--ac); color: var(--ac); text-decoration: none; }
+
+/* Markdown task lists (checklists) */
+.prose li:has(> input[type="checkbox"]) { list-style: none; margin-left: -18px; }
+.prose input[type="checkbox"] { margin-right: 9px; accent-color: var(--ac); transform: translateY(1px); }
+
+/* Writing: uniform row height so the three columns stay balanced */
+.writing-group .linklist a { align-items: center; height: 56px; padding-top: 0; padding-bottom: 0; }
+.writing-group .linklist .t { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.3; }
