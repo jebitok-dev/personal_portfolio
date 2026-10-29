@@ -1,15 +1,7 @@
+import SiteNav from "@/components/SiteNav";
 import Work, { TrackButton } from "@/components/Work";
 import { about, badges, contacts, profile, skills, stats, tryhackme, writing } from "@/content/site";
 import { getPosts } from "@/lib/posts";
-
-const NAV = [
-  ["#work", "Work"],
-  ["#research", "Research"],
-  ["#writing", "Writing"],
-  ["#skills", "Skills"],
-  ["/cheatsheet/", "Cyber cheatsheet"],
-  ["#contact", "Contact"],
-];
 
 const ext = { target: "_blank", rel: "noopener noreferrer" } as const;
 
@@ -22,13 +14,7 @@ export default async function Home() {
   return (
     <div className="page">
       <div className="wrap">
-        <nav className="nav">
-          <span className="brand">{profile.handle}</span>
-          <span className="spacer" />
-          {NAV.map(([href, label]) => (
-            <a key={href} href={href} className="item">{label}</a>
-          ))}
-        </nav>
+        <SiteNav brand={profile.handle} />
 
         <header className="hero">
           <div className="eyebrow"><span className="dot" /><span>{profile.eyebrow}</span></div>

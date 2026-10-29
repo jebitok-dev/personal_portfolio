@@ -308,3 +308,33 @@ a.card .links span { font-family: var(--font-mono); font-size: 12px; letter-spac
 /* Writing: uniform row height so the three columns stay balanced */
 .writing-group .linklist a { align-items: center; height: 56px; padding-top: 0; padding-bottom: 0; }
 .writing-group .linklist .t { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.3; }
+
+/* Mobile sidebar nav (home page) */
+.nav-links { display: contents; }
+.nav-toggle, .nav-drawer, .nav-backdrop { display: none; }
+
+@media (max-width: 640px) {
+  .nav { gap: 14px; flex-wrap: nowrap; }
+  .nav .spacer { flex: 1 1 auto; height: auto; flex-basis: auto; }
+  .nav-links { display: none; }
+
+  .nav-toggle {
+    display: inline-flex; flex-direction: column; justify-content: center; gap: 4px;
+    width: 40px; height: 34px; padding: 0 8px; background: none;
+    border: 1px solid var(--line); cursor: pointer;
+  }
+  .nav-toggle span { display: block; height: 2px; background: var(--text); }
+
+  .nav-backdrop { display: block; position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 40; }
+
+  .nav-drawer {
+    display: flex; flex-direction: column; gap: 2px;
+    position: fixed; top: 0; right: 0; height: 100dvh; width: min(80vw, 280px);
+    background: var(--surface); border-left: 1px solid var(--line);
+    padding: 60px 18px 24px; transform: translateX(100%); transition: transform .2s ease; z-index: 50;
+  }
+  .nav-drawer.open { transform: translateX(0); }
+  .nav-drawer .item { font-size: 16px; color: var(--text-2); padding: 13px 8px; border-bottom: 1px solid var(--line); }
+  .nav-drawer .item:hover { color: var(--ac); text-decoration: none; }
+  .nav-close { position: absolute; top: 12px; right: 14px; background: none; border: 0; color: var(--text-2); font-size: 30px; line-height: 1; cursor: pointer; }
+}
