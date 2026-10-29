@@ -1,58 +1,46 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Sharon Jebitok — Portfolio
 
-# Portfolio PROJECT
+Personal portfolio covering Web3 engineering, security research (bug bounty, smart contract audits, SOC/DFIR, AI/ML security) and earlier full-stack work.
 
-> The Personal Portfolio Project
+## Built with
 
-<!-- ![screenshot](./assets/images/patashule7.png) -->
+- Next.js 16 (App Router, static export) · React 19 · TypeScript
+- Plain CSS (`app/globals.css`), Archivo + Azeret Mono via `next/font`
+- pnpm
 
-<!-- Additional description about the project and its features. -->
+## Getting started
 
-- This project is the implementation of the personal portfolio project to display my career progress, previously done projects, my skills, about me and copy of resume and social media pages as well as blogs.
+```bash
+pnpm install
+pnpm dev        # http://localhost:3000
+pnpm build      # static site written to ./out
+```
 
-## Built With
+## Editing content
 
-- HTML5
-- CSS3
-- Bootstrap
-- linters
+All text, projects, stats, skills and links are in `content/site.ts`.
 
-<!-- ## Live Demo -->
+- A link with an empty `href` is hidden on the page. Search for `TODO` to find the ones left to fill in.
+- The featured audit finding is shown in `pnpm dev` only, until `featuredFinding.ready` is set to `true`.
+- The Writing section pulls the latest posts from the blog's RSS feed (`sharonjebitok.com/rss.xml`) at build time, so rebuild to refresh it.
 
-## Getting Started
+## Project layout
 
-To get a local copy up and running follow these simple example steps.
+```
+app/          layout, page, global styles
+components/   Work section (filters + featured finding)
+content/      site.ts: all editable content
+lib/          RSS feed reader for blog posts
+design/       Claude Design export the layout is based on
+legacy/       previous HTML/CSS/Bootstrap version of the site
+```
 
-- Fork the repository
-- Git clone https://github.com/your-username/personal_portfolio
-- git checkout -b branch name
-- git remote add upstream https://github.com/jebitok-dev/personal_portfolio
-- git pull upstream master
-- git commit -m "commit message"
-- git push -u origin HEAD
+## Deploying
+
+`pnpm build` outputs plain static files in `out/`, which can be hosted on Vercel, Netlify (build command `pnpm build`, publish directory `out`) or GitHub Pages.
 
 ## Author
 
-👤 **Author**
-
-- GitHub: [@Jebitok-dev](https://github.com/Jebitok-dev)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-<!-- - I hereby acknowldge the designers' [Mathew Njuguna](https://www.behance.net/mathewnjuguna) and [Sam Achola](https://www.behance.net/aweSam) who designed the [PataShule Directory of Schools](https://www.behance.net/gallery/25563385/PatashuleKE) design that is available on [behance](behance.com).
-- Inspiration
-- etc -->
-
-<!-- ## 📝 License -->
-
-<!-- This project is [MIT](lic.url) licensed. -->
+- GitHub: [@jebitok-dev](https://github.com/jebitok-dev)
+- LinkedIn: [sharon-jebitok](https://www.linkedin.com/in/sharon-jebitok/)
+- Blog: [sharonjebitok.com](https://www.sharonjebitok.com)
