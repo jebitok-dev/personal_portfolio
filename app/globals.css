@@ -170,7 +170,7 @@ a.badge:hover { border-color: var(--ac); color: var(--ac); text-decoration: none
 .all { display: inline-block; margin-top: 18px; font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.04em; }
 
 /* Skills */
-.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 36px; }
+.skills { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px 28px; }
 .skills h3 { margin: 0 0 14px; font-size: 15px; font-weight: 600; letter-spacing: -0.01em; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
 .skills ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
 .skills li { font-family: var(--font-mono); font-size: 13px; color: oklch(0.80 0.01 252); }
@@ -252,3 +252,33 @@ a.card .links span { font-family: var(--font-mono); font-size: 12px; letter-spac
 .linklist .t { font-size: 14px; line-height: 1.4; }
 .linklist .d { font-family: var(--font-mono); font-size: 11px; color: var(--muted); white-space: nowrap; }
 .section .subhead:not(:first-of-type) { margin-top: 8px; }
+
+/* Writing: three category columns on large screens */
+.writing-groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-bottom: 36px; }
+.writing-group .subhead { margin-bottom: 14px; }
+.writing-group .linklist { grid-template-columns: minmax(0, 1fr); margin-bottom: 0; }
+@media (max-width: 900px) { .writing-groups { grid-template-columns: 1fr; gap: 28px; } }
+
+/* Minimalist lower area: tighter spacing toward the footer */
+.section.tight { padding: 52px 0; }
+.skills h3 { margin-bottom: 12px; padding-bottom: 10px; }
+.skills li { font-size: 12.5px; }
+.contact { padding: 52px 0 0; gap: 32px; }
+.footer { margin-top: 44px; }
+/* Skills: even columns down the breakpoints */
+@media (max-width: 860px) { .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 28px; } }
+@media (max-width: 460px) { .skills { grid-template-columns: 1fr; } }
+
+/* TryHackMe career paths */
+.research-sub { margin-top: 32px; }
+.paths { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; }
+.paths .track-name { font-size: 14px; font-weight: 600; letter-spacing: -0.01em; color: var(--text); }
+.paths .track-note { display: block; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.04em; color: var(--muted); margin: 3px 0 14px; }
+.path { margin-bottom: 11px; }
+.path-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; font-size: 12.5px; color: var(--text-2); margin-bottom: 5px; }
+.path-pct { font-family: var(--font-mono); font-size: 11px; color: var(--ac); }
+.path-ongoing { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
+.bar { height: 4px; background: var(--line); }
+.bar > span { display: block; height: 100%; background: var(--ac); }
+@media (max-width: 860px) { .paths { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 28px; } }
+@media (max-width: 460px) { .paths { grid-template-columns: 1fr; } }

@@ -1,12 +1,13 @@
-# Sharon Jebitok — Portfolio
+# Sharon Jebitok - Portfolio
 
-Personal portfolio covering Web3 engineering, security research (bug bounty, smart contract audits, SOC/DFIR, AI/ML security) and earlier full-stack work.
+Personal portfolio covering security research (AI security, smart-contract audits, bug bounty, SOC/DFIR), software engineering, and Web3.
 
 ## Built with
 
 - Next.js 16 (App Router, static export) · React 19 · TypeScript
 - Plain CSS (`app/globals.css`), Archivo + Azeret Mono via `next/font`
 - pnpm
+- Claude Code
 
 ## Getting started
 

@@ -1,5 +1,5 @@
 import Work, { TrackButton } from "@/components/Work";
-import { about, aiWriting, badges, contacts, profile, skills, stats } from "@/content/site";
+import { about, badges, contacts, profile, skills, stats, tryhackme, writing } from "@/content/site";
 import { getPosts } from "@/lib/posts";
 
 const NAV = [
@@ -12,6 +12,9 @@ const NAV = [
 ];
 
 const ext = { target: "_blank", rel: "noopener noreferrer" } as const;
+
+// Keep the three writing columns equal length; the rest live on the blog.
+const WRITING_PER_CATEGORY = 8;
 
 export default async function Home() {
   const posts = await getPosts(profile.blogRss);
@@ -64,6 +67,31 @@ export default async function Home() {
               </div>
             ))}
           </div>
+          <h3 className="subhead research-sub">TryHackMe career paths</h3>
+          <div className="paths">
+            {tryhackme.tracks.map((t) => (
+              <div key={t.name} className="track">
+                <div className="track-name">{t.name}</div>
+                <span className="track-note">{t.note}</span>
+                {t.paths.map((p) => (
+                  <div key={p.name} className="path">
+                    <div className="path-head">
+                      <span>{p.name}</span>
+                      {p.pct != null ? (
+                        <span className="path-pct">{p.pct}%</span>
+                      ) : (
+                        <span className="path-ongoing">ongoing</span>
+                      )}
+                    </div>
+                    {p.pct != null && (
+                      <div className="bar"><span style={{ width: `${p.pct}%` }} /></div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+
           <div className="badges">
             {badges.map((b) =>
               b.href ? (
@@ -78,13 +106,19 @@ export default async function Home() {
         <section id="writing" className="section">
           <h2 className="label">Writing</h2>
 
-          <h3 className="subhead">AI security writeups</h3>
-          <div className="linklist">
-            {aiWriting.map((w) => (
-              <a key={w.href} href={w.href} {...ext}>
-                <span className="t">{w.title}</span>
-                <span className="d">{w.date}</span>
-              </a>
+          <div className="writing-groups">
+            {writing.map((group) => (
+              <div key={group.name} className="writing-group">
+                <h3 className="subhead">{group.name}</h3>
+                <div className="linklist">
+                  {group.items.slice(0, WRITING_PER_CATEGORY).map((w) => (
+                    <a key={w.href} href={w.href} {...ext}>
+                      <span className="t">{w.title}</span>
+                      <span className="d">{w.date}</span>
+                    </a>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
 
@@ -107,7 +141,7 @@ export default async function Home() {
           <a href={profile.blogUrl} className="all" {...ext}>See all posts on CyberWithSharon →</a>
         </section>
 
-        <section id="skills" className="section">
+        <section id="skills" className="section tight">
           <h2 className="label">Skills</h2>
           <div className="skills">
             {skills.map((g) => (
