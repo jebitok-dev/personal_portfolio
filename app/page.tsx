@@ -1,5 +1,5 @@
 import SiteNav from "@/components/SiteNav";
-import Work, { TrackButton } from "@/components/Work";
+import Work from "@/components/Work";
 import { about, badges, contacts, profile, skills, stats, tryhackme, writing } from "@/content/site";
 import { getPosts } from "@/lib/posts";
 
@@ -23,28 +23,17 @@ export default async function Home() {
             {profile.tagline[0]} <span className="sep">|</span> {profile.tagline[1]}
           </p>
           <div className="ctas">
-            <TrackButton track="Security" className="btn btn-primary">
-              Security work <span className="arrow">→</span>
-            </TrackButton>
-            <TrackButton track="Full-stack" className="btn btn-ghost">
-              Full-stack <span className="arrow">→</span>
-            </TrackButton>
-            <TrackButton track="Web3" className="btn btn-web3">
-              Web3 &amp; blockchain <span className="arrow">→</span>
-            </TrackButton>
+            {profile.resumes.map((r, i) => (
+              <a key={r.href} href={r.href} className={i === 0 ? "btn btn-primary" : "btn btn-ghost"} {...ext}>
+                {r.label} <span className="arrow">PDF</span>
+              </a>
+            ))}
+            <a href="#contact" className="btn btn-ghost">
+              Get in touch <span className="arrow">→</span>
+            </a>
           </div>
-        </header>
 
-        <section className="section about">
-          <h2 className="label">About</h2>
-          <p>{about.text}</p>
-        </section>
-
-        <Work />
-
-        <section id="research" className="section">
-          <h2 className="label">Security research</h2>
-          <div className="stats">
+          <div className="stats hero-stats">
             {stats.map((s) => (
               <div key={s.label} className="stat">
                 <div className="k">{s.label}</div>
@@ -53,7 +42,28 @@ export default async function Home() {
               </div>
             ))}
           </div>
-          <h3 className="subhead research-sub">TryHackMe career paths</h3>
+        </header>
+
+        <section className="section about">
+          <h2 className="label">About</h2>
+          <div className="about-body">
+            <p className="lead">{about.lead}</p>
+            <dl className="about-points">
+              {about.points.map((pt) => (
+                <div key={pt.label}>
+                  <dt>{pt.label}</dt>
+                  <dd>{pt.text}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+
+        <Work />
+
+        <section id="research" className="section">
+          <h2 className="label">Security research</h2>
+          <h3 className="subhead">TryHackMe career paths</h3>
           <div className="paths">
             {tryhackme.tracks.map((t) => (
               <div key={t.name} className="track">

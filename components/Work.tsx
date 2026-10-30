@@ -1,24 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { projects, type Link, type Track } from "@/content/site";
 
 type Filter = "All" | Track;
 const FILTERS: Filter[] = ["All", "Security", "Full-stack", "Web3"];
-const TRACK_EVENT = "portfolio:set-track";
-
-// Lets other components (the hero buttons) switch the work filter.
-export function setTrack(track: Filter) {
-  window.dispatchEvent(new CustomEvent<Filter>(TRACK_EVENT, { detail: track }));
-}
-
-export function TrackButton(props: { track: Filter; className: string; children: React.ReactNode }) {
-  return (
-    <a href="#work" className={props.className} onClick={() => setTrack(props.track)}>
-      {props.children}
-    </a>
-  );
-}
 
 function LinkList({ links }: { links: Link[] }) {
   const shown = links.filter((l) => l.href);
@@ -36,12 +22,6 @@ function LinkList({ links }: { links: Link[] }) {
 
 export default function Work() {
   const [filter, setFilter] = useState<Filter>("All");
-
-  useEffect(() => {
-    const onTrack = (e: Event) => setFilter((e as CustomEvent<Filter>).detail);
-    window.addEventListener(TRACK_EVENT, onTrack);
-    return () => window.removeEventListener(TRACK_EVENT, onTrack);
-  }, []);
 
   const visible = projects.filter((p) => filter === "All" || p.tags.includes(filter));
 

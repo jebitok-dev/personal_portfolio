@@ -8,8 +8,12 @@ const NAV: [string, string][] = [
   ["#writing", "Writing"],
   ["#skills", "Skills"],
   ["/cheatsheet/", "Cyber cheatsheet"],
+  ["/resume-security.pdf", "Résumé"],
   ["#contact", "Contact"],
 ];
+
+const linkProps = (href: string) =>
+  href.endsWith(".pdf") ? { target: "_blank", rel: "noopener noreferrer" } : {};
 
 export default function SiteNav({ brand }: { brand: string }) {
   const [open, setOpen] = useState(false);
@@ -29,7 +33,7 @@ export default function SiteNav({ brand }: { brand: string }) {
 
       <div className="nav-links">
         {NAV.map(([href, label]) => (
-          <a key={href} href={href} className="item">{label}</a>
+          <a key={href} href={href} className="item" {...linkProps(href)}>{label}</a>
         ))}
       </div>
 
@@ -47,7 +51,7 @@ export default function SiteNav({ brand }: { brand: string }) {
       <aside className={open ? "nav-drawer open" : "nav-drawer"} aria-hidden={!open}>
         <button className="nav-close" aria-label="Close menu" onClick={() => setOpen(false)}>×</button>
         {NAV.map(([href, label]) => (
-          <a key={href} href={href} className="item" onClick={() => setOpen(false)}>{label}</a>
+          <a key={href} href={href} className="item" onClick={() => setOpen(false)} {...linkProps(href)}>{label}</a>
         ))}
       </aside>
     </nav>

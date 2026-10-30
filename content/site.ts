@@ -28,8 +28,22 @@ export const profile = {
 };
 
 export const about = {
-  text:
-    "I've spent 4+ years building production software in TypeScript, React and Node.js - SDKs, browser extensions, APIs and smart contracts. Threat-modelling features, reviewing code for exploitable flaws and auditing dependencies before they shipped pulled me steadily deeper into security. I'm now ranked in the top 1% globally on TryHackMe across SOC Level 1, Jr Penetration Tester and AI Security; I publish AI-security writeups and practitioner checklists that map the OWASP LLM Top 10 and MITRE ATLAS onto real systems; and I found and reported a medium-severity smart-contract audit finding. I'm moving into vulnerability disclosure, bug-bounty and AI red-teaming - including Gray Swan's jailbreaking arena - across web, smart-contract and LLM targets. I read alerts, logs and code with an understanding of how systems actually break.",
+  lead:
+    "Software engineer turned security researcher. 4+ years shipping production TypeScript, React and Node.js, and I read alerts, logs and code knowing how systems actually break.",
+  points: [
+    {
+      label: "Focus",
+      text: "AI red-teaming and LLM security, vulnerability disclosure and bug bounty, smart-contract auditing.",
+    },
+    {
+      label: "Track record",
+      text: "Top 1% on TryHackMe (SOC Level 1, Jr Penetration Tester, AI Security). AI-security writeups and checklists mapping the OWASP LLM Top 10 and MITRE ATLAS onto real systems. A medium-severity smart-contract audit finding. Gray Swan AI red-teaming arena.",
+    },
+    {
+      label: "Looking for",
+      text: "Security research, AppSec / AI security and security-minded engineering roles.",
+    },
+  ],
 };
 
 // Curated writeups grouped by track (verified links). Edit freely; add more from the blog.
@@ -128,70 +142,6 @@ export const projects: Project[] = [
     tags: ["Full-stack"],
     links: [],
   },
-  /* Microverse bootcamp projects - dropped for now; restore by uncommenting.
-  {
-    title: "Bookstore",
-    blurb:
-      "Bookstore dashboard to add and remove books, browse the catalogue and track reading progress. Built with React and Redux.",
-    tags: ["Full-stack"],
-    links: [
-      { label: "Source →", href: "https://github.com/jebitok-dev/bookstore" },
-      { label: "Live →", href: "https://bookstore-rrdx.netlify.app/" },
-    ],
-  },
-  {
-    title: "Twitter Redesign",
-    blurb:
-      "Social app with sign-up and log-in, tweeting and following other users. Built with Ruby on Rails and SCSS.",
-    tags: ["Full-stack"],
-    links: [{ label: "Source →", href: "https://github.com/jebitok-dev/Twitter-Redesign" }],
-  },
-  {
-    title: "Adopt Pets",
-    blurb: "Pet catalogue with filtering by category and a detail view for each pet. Built with React and SCSS.",
-    tags: ["Full-stack"],
-    links: [
-      { label: "Source →", href: "https://github.com/jebitok-dev/catalogue-of-pets/" },
-      { label: "Live →", href: "https://catalogue-of-pets.netlify.app/" },
-    ],
-  },
-  {
-    title: "Weather App",
-    blurb: "Search any city for real-time weather, using JavaScript and the OpenWeather API.",
-    tags: ["Full-stack"],
-    links: [
-      { label: "Source →", href: "https://github.com/jebitok-dev/Weather-App" },
-      { label: "Live →", href: "https://weather-app-async.netlify.app/" },
-    ],
-  },
-  {
-    title: "Phaser platform game",
-    blurb: "Browser platform game built with JavaScript, HTML5 and Phaser.",
-    tags: ["Full-stack"],
-    links: [
-      { label: "Source →", href: "https://github.com/jebitok-dev/platform-game" },
-      { label: "Play →", href: "https://platform-game-with-phaser.netlify.app/" },
-    ],
-  },
-  {
-    title: "Restaurant page",
-    blurb: "Restaurant landing page with about, menu and contact tabs, rendered with JavaScript.",
-    tags: ["Full-stack"],
-    links: [
-      { label: "Source →", href: "https://github.com/jebitok-dev/RestaurantPage" },
-      { label: "Live →", href: "https://deal-restaurantjs.netlify.app/" },
-    ],
-  },
-  {
-    title: "PataShule",
-    blurb: "Landing page for a directory of schools, built with HTML and Bootstrap.",
-    tags: ["Full-stack"],
-    links: [
-      { label: "Source →", href: "https://github.com/jebitok-dev/Capstone1-html" },
-      { label: "Live →", href: "https://patashule-capstone.netlify.app/" },
-    ],
-  },
-  */
   {
     title: "Wallet-authenticated trust SDK",
     blurb:

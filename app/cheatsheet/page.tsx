@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getResources } from "@/lib/resources";
 import { quickLinks } from "@/content/resources";
 import { profile } from "@/content/site";
+import CheatsheetBar from "@/components/CheatsheetBar";
 
 export const metadata: Metadata = {
   title: "Cyber cheatsheet · Sharon Jebitok",
@@ -18,19 +19,15 @@ export default async function Cheatsheet() {
   return (
     <div className="page">
       <div className="wrap">
-        <nav className="nav">
-          <a href="/" className="brand"><img src="/logo.png" alt="" width={28} height={28} className="brand-logo" /><span>{profile.handle}</span></a>
-          <span className="spacer" />
-          <a href="/" className="item">← Back to portfolio</a>
-        </nav>
+        <CheatsheetBar brand={profile.handle} docs={embedded.map(({ slug, title }) => ({ slug, title }))} />
 
-        <header className="hero res-hero">
+        <header className="hero res-hero cheat-intro">
           <div className="eyebrow"><span className="dot" /><span>Cyber cheatsheet</span></div>
           <h1>Cyber cheatsheet</h1>
           <p className="tagline">The references I reach for during CTFs and security work, in one searchable place.</p>
         </header>
 
-        <section className="section">
+        <section className="section cheat-intro">
           <h2 className="label">Quick references</h2>
           <div className="quick-links">
             {quickLinks.map((l) => (
@@ -67,7 +64,7 @@ export default async function Cheatsheet() {
         ))}
 
         {external.length > 0 && (
-          <section className="section">
+          <section className="section cheat-intro">
             <h2 className="label">Reference repos</h2>
             <div className="grid">
               {external.map((doc) => (
