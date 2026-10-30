@@ -32,8 +32,6 @@ app/          layout, page, global styles
 components/   Work section (filters + featured finding)
 content/      site.ts: all editable content
 lib/          RSS feed reader for blog posts
-design/       Claude Design export the layout is based on
-legacy/       previous HTML/CSS/Bootstrap version of the site
 ```
 
 ## Deploying
