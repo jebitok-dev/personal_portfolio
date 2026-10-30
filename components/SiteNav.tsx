@@ -24,7 +24,7 @@ export default function SiteNav({ brand }: { brand: string }) {
 
   return (
     <nav className="nav">
-      <a href="/" className="brand">{brand}</a>
+      <a href="/" className="brand"><img src="/logo.png" alt="" width={28} height={28} className="brand-logo" /><span>{brand}</span></a>
       <span className="spacer" />
 
       <div className="nav-links">

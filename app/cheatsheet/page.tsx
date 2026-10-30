@@ -19,7 +19,7 @@ export default async function Cheatsheet() {
     <div className="page">
       <div className="wrap">
         <nav className="nav">
-          <a href="/" className="brand">{profile.handle}</a>
+          <a href="/" className="brand"><img src="/logo.png" alt="" width={28} height={28} className="brand-logo" /><span>{profile.handle}</span></a>
           <span className="spacer" />
           <a href="/" className="item">← Back to portfolio</a>
         </nav>

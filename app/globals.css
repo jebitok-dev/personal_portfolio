@@ -35,10 +35,11 @@ a:hover { color: var(--ac-hover); text-decoration: underline; text-underline-off
 
 /* Nav */
 .nav {
-  display: flex; align-items: baseline; gap: 28px; flex-wrap: wrap;
+  display: flex; align-items: center; gap: 28px; flex-wrap: wrap;
   padding: 26px 0 18px; border-bottom: 1px solid var(--line);
 }
-.nav .brand { font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.02em; color: var(--text); }
+.nav .brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.02em; color: var(--text); }
+.nav .brand-logo { width: 28px; height: 28px; border-radius: 6px; display: block; }
 .nav .spacer { flex: 1 1 auto; }
 .nav a.item { font-size: 14px; color: oklch(0.72 0.012 252); }
 .nav a.item:hover { color: var(--ac); }
